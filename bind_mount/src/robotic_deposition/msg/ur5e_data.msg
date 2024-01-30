@@ -1,0 +1,7 @@
+std_msgs/Float64MultiArray joint_angles
+std_msgs/Float64MultiArray joint_velocities
+std_msgs/Float64MultiArray tcp_pose
+std_msgs/Float64MultiArray tcp_speed
+std_msgs/Float64MultiArray tcp_force
+std_msgs/Float64  time
+std_msgs/Bool is_steady

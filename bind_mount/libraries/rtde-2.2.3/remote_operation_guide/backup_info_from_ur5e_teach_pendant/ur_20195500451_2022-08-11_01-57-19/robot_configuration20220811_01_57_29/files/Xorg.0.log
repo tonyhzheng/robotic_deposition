@@ -1,0 +1,320 @@
+[     9.935] 
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+[     9.935] X Protocol Version 11, Revision 0
+[     9.935] Build Operating System: Linux 4.9.0-4-amd64 i686 Debian
+[     9.935] Current Operating System: Linux ur-20195500451 4.9.65-rt57ur #1 SMP PREEMPT RT Fri Mar 16 08:51:19 UTC 2018 i686
+[     9.935] Kernel command line: BOOT_IMAGE=(hd0,3)/vmlinuz root=LABEL=rootfs.0 rootfstype=ext3 console=ttyS0,115200 consoleblank=0 net.ifnames=0 biosdevname=0 panic=60 intel_idle.max_cstate=0 processor.max_cstate=0 sdhci_pci.max_freq=0 idle=poll splash quiet rauc.slot=A isolcpus=3
+[     9.936] Build Date: 16 October 2017  08:08:13AM
+[     9.936] xorg-server 2:1.16.4-1+deb8u2 (http://www.debian.org/support) 
+[     9.936] Current version of pixman: 0.32.6
+[     9.936] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     9.936] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     9.936] (==) Log file: "/var/log/Xorg.0.log", Time: Thu Aug 11 01:46:23 2022
+[     9.953] (==) Using config file: "/etc/X11/xorg.conf"
+[     9.953] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     9.967] (==) ServerLayout "Default Layout"
+[     9.967] (**) |-->Screen "Default Screen" (0)
+[     9.967] (**) |   |-->Monitor "Generic Monitor"
+[     9.973] (**) |   |-->Device "Intel Video Card"
+[     9.973] (**) |-->Screen "Generic Screen" (1)
+[     9.973] (**) |   |-->Monitor "Generic Monitor"
+[     9.974] (**) |   |-->Device "Generic Video Card"
+[     9.974] (**) |-->Screen "External Screen" (2)
+[     9.974] (**) |   |-->Monitor "DP1"
+[     9.974] (**) |   |-->Device "Intel Video Card"
+[     9.974] (**) |-->Input Device "Generic Keyboard"
+[     9.974] (**) |-->Input Device "Configured Mouse"
+[     9.974] (==) Automatically adding devices
+[     9.974] (==) Automatically enabling devices
+[     9.974] (==) Automatically adding GPU devices
+[     9.982] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/misc" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/truetype/ttf-dejavu" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/var/lib/defoma/x-ttcidfont-conf.d/dirs/TrueType" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/misc" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/Type1" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.982] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     9.982] 	Entry deleted from font path.
+[     9.983] (**) FontPath set to:
+	built-ins
+[     9.983] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     9.983] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[     9.983] (WW) Disabling Generic Keyboard
+[     9.983] (WW) Disabling Configured Mouse
+[     9.983] (II) Loader magic: 0x74a700
+[     9.983] (II) Module ABI versions:
+[     9.983] 	X.Org ANSI C Emulation: 0.4
+[     9.983] 	X.Org Video Driver: 18.0
+[     9.983] 	X.Org XInput driver : 21.0
+[     9.983] 	X.Org Server Extension : 8.0
+[     9.983] (II) xfree86: Adding drm device (/dev/dri/card0)
+[     9.995] (--) PCI:*(0:0:2:0) 8086:0f31:8086:2212 rev 17, Mem @ 0xf8000000/4194304, 0xf0000000/134217728, I/O @ 0x0000e020/8, BIOS @ 0x????????/131072
+[     9.999] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[     9.999] (II) LoadModule: "ddc"
+[     9.999] (II) Module "ddc" already built-in
+[     9.999] (II) LoadModule: "extmod"
+[     9.999] (II) Module "extmod" already built-in
+[     9.999] (II) LoadModule: "glx"
+[    10.012] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    10.148] (II) Module glx: vendor="X.Org Foundation"
+[    10.148] 	compiled for 1.16.4, module version = 1.0.0
+[    10.148] 	ABI class: X.Org Server Extension, version 8.0
+[    10.148] (==) AIGLX enabled
+[    10.148] (II) LoadModule: "int10"
+[    10.149] (II) Loading /usr/lib/xorg/modules/libint10.so
+[    10.166] (II) Module int10: vendor="X.Org Foundation"
+[    10.166] 	compiled for 1.16.4, module version = 1.0.0
+[    10.166] 	ABI class: X.Org Video Driver, version 18.0
+[    10.166] (II) LoadModule: "vbe"
+[    10.169] (II) Loading /usr/lib/xorg/modules/libvbe.so
+[    10.183] (II) Module vbe: vendor="X.Org Foundation"
+[    10.183] 	compiled for 1.16.4, module version = 1.1.0
+[    10.183] 	ABI class: X.Org Video Driver, version 18.0
+[    10.183] (II) LoadModule: "intel"
+[    10.184] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[    10.231] (II) Module intel: vendor="X.Org Foundation"
+[    10.231] 	compiled for 1.15.99.904, module version = 2.21.15
+[    10.231] 	Module class: X.Org Video Driver
+[    10.231] 	ABI class: X.Org Video Driver, version 18.0
+[    10.231] (II) LoadModule: "vesa"
+[    10.232] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    10.244] (II) Module vesa: vendor="X.Org Foundation"
+[    10.244] 	compiled for 1.15.99.904, module version = 2.3.3
+[    10.244] 	Module class: X.Org Video Driver
+[    10.244] 	ABI class: X.Org Video Driver, version 18.0
+[    10.244] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43, HD Graphics,
+	HD Graphics 2000, HD Graphics 3000, HD Graphics 2500,
+	HD Graphics 4000, HD Graphics P4000, HD Graphics 4600,
+	HD Graphics 5000, HD Graphics P4600/P4700, Iris(TM) Graphics 5100,
+	HD Graphics 4400, HD Graphics 4200, Iris(TM) Pro Graphics 5200
+[    10.249] (II) VESA: driver for VESA chipsets: vesa
+[    10.249] (++) using VT number 7
+
+[    10.276] (WW) Falling back to old probe method for vesa
+[    10.293] (**) intel(0): Depth 24, (--) framebuffer bpp 32
+[    10.293] (==) intel(0): RGB weight 888
+[    10.293] (==) intel(0): Default visual is TrueColor
+[    10.293] (**) intel(0): Option "AccelMethod" "uxa"
+[    10.293] (--) intel(0): gen7 engineering sample
+[    10.294] (**) intel(0): Relaxed fencing enabled
+[    10.294] (**) intel(0): Wait on SwapBuffers? enabled
+[    10.294] (**) intel(0): Triple buffering? enabled
+[    10.294] (**) intel(0): Framebuffer tiled
+[    10.294] (**) intel(0): Pixmaps tiled
+[    10.294] (**) intel(0): 3D buffers tiled
+[    10.294] (**) intel(0): SwapBuffers wait enabled
+[    10.294] (==) intel(0): video overlay key set to 0x101fe
+[    10.295] (II) intel(0): Output eDP1 using monitor section Generic Monitor
+[    10.295] (--) intel(0): found backlight control interface /sys/class/backlight/intel_backlight
+[    10.295] (II) intel(0): Output DP1 using monitor section DP1
+[    10.295] (**) intel(0): Option "PreferredMode" "1280x800_60.00"
+[    10.297] (II) intel(0): Output HDMI1 has no monitor section
+[    10.298] (II) intel(0): EDID for output eDP1
+[    10.298] (II) intel(0): Manufacturer: MEX  Model: 6  Serial#: 0
+[    10.298] (II) intel(0): Year: 2000  Week: 1
+[    10.298] (II) intel(0): EDID Version: 1.3
+[    10.298] (II) intel(0): Digital Display Input
+[    10.298] (II) intel(0): Max Image Size [cm]: horiz.: 32  vert.: 20
+[    10.298] (II) intel(0): Gamma: 1.00
+[    10.298] (II) intel(0): DPMS capabilities: StandBy Suspend
+[    10.298] (II) intel(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    10.298] (II) intel(0): Default color space is primary color space
+[    10.298] (II) intel(0): First detailed timing is preferred mode
+[    10.298] (II) intel(0): redX: 0.000 redY: 0.000   greenX: 0.000 greenY: 0.000
+[    10.298] (II) intel(0): blueX: 0.000 blueY: 0.000   whiteX: 0.000 whiteY: 0.000
+[    10.298] (II) intel(0): Manufacturer's mask: 0
+[    10.298] (II) intel(0): Supported detailed timing:
+[    10.298] (II) intel(0): clock: 71.0 MHz   Image Size:  300 x 200 mm
+[    10.298] (II) intel(0): h_active: 1280  h_sync: 1328  h_sync_end 1360 h_blank_end 1440 h_border: 0
+[    10.298] (II) intel(0): v_active: 800  v_sync: 803  v_sync_end 809 v_blanking: 823 v_border: 0
+[    10.298] (II) intel(0): EDID (in hex):
+[    10.298] (II) intel(0): 	00ffffffffffff0034b8060000000000
+[    10.298] (II) intel(0): 	010a010380201400ce00000000000000
+[    10.299] (II) intel(0): 	00000000000001010101010101010101
+[    10.299] (II) intel(0): 	010101010101bc1b00a0502017303020
+[    10.299] (II) intel(0): 	36002cc81000001a0000001000000000
+[    10.299] (II) intel(0): 	00000000000000000000000000100000
+[    10.299] (II) intel(0): 	00000000000000000000000000000010
+[    10.299] (II) intel(0): 	00000000000000000000000000000071
+[    10.299] (II) intel(0): Not using default mode "320x240" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "400x300" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "400x300" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "512x384" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "640x480" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "640x512" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "800x600" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "896x672" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "928x696" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "960x720" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "576x432" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "680x384" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "680x384" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "700x525" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "720x450" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "800x512" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "840x525" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "840x525" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "960x540" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "960x600" (doublescan mode not supported)
+[    10.299] (II) intel(0): Not using default mode "1024x768" (doublescan mode not supported)
+[    10.299] (II) intel(0): Printing probed modes for output eDP1
+[    10.299] (II) intel(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz UeP)
+[    10.299] (II) intel(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[    10.300] (II) intel(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[    10.300] (II) intel(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[    10.300] (II) intel(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[    10.300] (II) intel(0): EDID for output DP1
+[    10.301] (II) intel(0): EDID for output HDMI1
+[    10.301] (II) intel(0): Output eDP1 connected
+[    10.301] (II) intel(0): Output DP1 disconnected
+[    10.301] (II) intel(0): Output HDMI1 disconnected
+[    10.301] (II) intel(0): Using user preference for initial modes
+[    10.301] (II) intel(0): Output eDP1 using initial mode 1280x800
+[    10.301] (II) intel(0): Using default gamma of (1.0, 1.0, 1.0) unless otherwise stated.
+[    10.301] (II) intel(0): Kernel page flipping support detected, enabling
+[    10.301] (==) intel(0): DPI set to (96, 96)
+[    10.301] (II) Loading sub module "fb"
+[    10.301] (II) LoadModule: "fb"
+[    10.302] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    10.319] (II) Module fb: vendor="X.Org Foundation"
+[    10.319] 	compiled for 1.16.4, module version = 1.0.0
+[    10.319] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    10.319] (II) Loading sub module "dri2"
+[    10.319] (II) LoadModule: "dri2"
+[    10.319] (II) Module "dri2" already built-in
+[    10.319] (II) UnloadModule: "vesa"
+[    10.319] (II) Unloading vesa
+[    10.319] (==) Depth 24 pixmap format is 32 bpp
+[    10.327] (II) intel(0): [DRI2] Setup complete
+[    10.327] (II) intel(0): [DRI2]   DRI driver: i965
+[    10.327] (II) intel(0): Allocated new frame buffer 1280x800 stride 5120, tiled
+[    10.345] (II) UXA(0): Driver registered support for the following operations:
+[    10.345] (II)         solid
+[    10.345] (II)         copy
+[    10.345] (II)         composite (RENDER acceleration)
+[    10.345] (II)         put_image
+[    10.345] (II)         get_image
+[    10.346] (==) intel(0): Backing store enabled
+[    10.346] (==) intel(0): Silken mouse enabled
+[    10.353] (II) intel(0): Initializing HW Cursor
+[    10.353] (II) intel(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[    10.366] (==) intel(0): DPMS enabled
+[    10.366] (==) intel(0): Intel XvMC decoder enabled
+[    10.366] (II) intel(0): Set up textured video
+[    10.366] (II) intel(0): [XvMC] xvmc_vld driver initialized.
+[    10.366] (II) intel(0): direct rendering: DRI2 Enabled
+[    10.366] (==) intel(0): hotplug detection: "enabled"
+[    10.393] (--) RandR disabled
+[    10.413] (II) SELinux: Disabled on system
+[    10.608] (II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+[    10.608] (II) AIGLX: enabled GLX_ARB_create_context
+[    10.608] (II) AIGLX: enabled GLX_ARB_create_context_profile
+[    10.608] (II) AIGLX: enabled GLX_EXT_create_context_es2_profile
+[    10.608] (II) AIGLX: enabled GLX_INTEL_swap_event
+[    10.608] (II) AIGLX: enabled GLX_SGI_swap_control and GLX_MESA_swap_control
+[    10.608] (II) AIGLX: enabled GLX_EXT_framebuffer_sRGB
+[    10.608] (II) AIGLX: enabled GLX_ARB_fbconfig_float
+[    10.608] (II) AIGLX: GLX_EXT_texture_from_pixmap backed by buffer objects
+[    10.608] (II) AIGLX: enabled GLX_ARB_create_context_robustness
+[    10.608] (II) AIGLX: Loaded and initialized i965
+[    10.608] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    10.609] (II) intel(0): Setting screen physical size to 338 x 211
+[    10.948] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[    10.948] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    10.948] (II) LoadModule: "evdev"
+[    10.949] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[    10.964] (II) Module evdev: vendor="X.Org Foundation"
+[    10.964] 	compiled for 1.16.0, module version = 2.9.0
+[    10.964] 	Module class: X.Org XInput Driver
+[    10.964] 	ABI class: X.Org XInput driver, version 21.0
+[    10.965] (II) Using input driver 'evdev' for 'Power Button'
+[    10.965] (**) Power Button: always reports core events
+[    10.965] (**) evdev: Power Button: Device: "/dev/input/event2"
+[    10.965] (--) evdev: Power Button: Vendor 0 Product 0x1
+[    10.965] (--) evdev: Power Button: Found keys
+[    10.965] (II) evdev: Power Button: Configuring as keyboard
+[    10.965] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[    10.965] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    10.965] (**) Option "xkb_rules" "evdev"
+[    10.965] (**) Option "xkb_model" "pc105"
+[    10.965] (**) Option "xkb_layout" "dk"
+[    11.013] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[    11.014] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    11.014] (II) Using input driver 'evdev' for 'Video Bus'
+[    11.014] (**) Video Bus: always reports core events
+[    11.014] (**) evdev: Video Bus: Device: "/dev/input/event3"
+[    11.014] (--) evdev: Video Bus: Vendor 0 Product 0x6
+[    11.014] (--) evdev: Video Bus: Found keys
+[    11.014] (II) evdev: Video Bus: Configuring as keyboard
+[    11.014] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input3/event3"
+[    11.014] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    11.014] (**) Option "xkb_rules" "evdev"
+[    11.014] (**) Option "xkb_model" "pc105"
+[    11.014] (**) Option "xkb_layout" "dk"
+[    11.015] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[    11.015] (II) No input driver specified, ignoring this device.
+[    11.015] (II) This device may have been added with another device file.
+[    11.016] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[    11.016] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[    11.016] (II) Using input driver 'evdev' for 'Sleep Button'
+[    11.016] (**) Sleep Button: always reports core events
+[    11.016] (**) evdev: Sleep Button: Device: "/dev/input/event0"
+[    11.016] (--) evdev: Sleep Button: Vendor 0 Product 0x3
+[    11.017] (--) evdev: Sleep Button: Found keys
+[    11.017] (II) evdev: Sleep Button: Configuring as keyboard
+[    11.017] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[    11.017] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[    11.017] (**) Option "xkb_rules" "evdev"
+[    11.017] (**) Option "xkb_model" "pc105"
+[    11.017] (**) Option "xkb_layout" "dk"
+[    11.019] (II) config/udev: Adding input device DATA MODUL easyTOUCH (/dev/input/event5)
+[    11.019] (**) DATA MODUL easyTOUCH: Applying InputClass "evdev touchscreen catchall"
+[    11.019] (II) Using input driver 'evdev' for 'DATA MODUL easyTOUCH'
+[    11.019] (**) DATA MODUL easyTOUCH: always reports core events
+[    11.019] (**) evdev: DATA MODUL easyTOUCH: Device: "/dev/input/event5"
+[    11.071] (--) evdev: DATA MODUL easyTOUCH: Vendor 0x7374 Product 0x1278
+[    11.071] (--) evdev: DATA MODUL easyTOUCH: Found absolute axes
+[    11.071] (--) evdev: DATA MODUL easyTOUCH: Found absolute multitouch axes
+[    11.071] (II) evdev: DATA MODUL easyTOUCH: No buttons found, faking one.
+[    11.071] (--) evdev: DATA MODUL easyTOUCH: Found x and y absolute axes
+[    11.071] (--) evdev: DATA MODUL easyTOUCH: Found absolute touchscreen
+[    11.071] (II) evdev: DATA MODUL easyTOUCH: Configuring as touchscreen
+[    11.071] (**) evdev: DATA MODUL easyTOUCH: YAxisMapping: buttons 4 and 5
+[    11.071] (**) evdev: DATA MODUL easyTOUCH: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    11.071] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.1/1-3.1:1.2/0003:7374:1278.0001/input/input5/event5"
+[    11.071] (II) XINPUT: Adding extended input device "DATA MODUL easyTOUCH" (type: TOUCHSCREEN, id 9)
+[    11.071] (II) evdev: DATA MODUL easyTOUCH: initialized for absolute axes.
+[    11.071] (**) DATA MODUL easyTOUCH: (accel) keeping acceleration scheme 1
+[    11.072] (**) DATA MODUL easyTOUCH: (accel) acceleration profile 0
+[    11.072] (**) DATA MODUL easyTOUCH: (accel) acceleration factor: 2.000
+[    11.072] (**) DATA MODUL easyTOUCH: (accel) acceleration threshold: 4
+[    11.072] (II) config/udev: Adding input device DATA MODUL easyTOUCH (/dev/input/mouse0)
+[    11.073] (II) No input driver specified, ignoring this device.
+[    11.073] (II) This device may have been added with another device file.
+[    11.073] (II) config/udev: Adding input device PC Speaker (/dev/input/event4)
+[    11.073] (II) No input driver specified, ignoring this device.
+[    11.073] (II) This device may have been added with another device file.

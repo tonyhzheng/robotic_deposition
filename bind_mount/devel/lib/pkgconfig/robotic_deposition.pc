@@ -1,0 +1,8 @@
+prefix=/home/docker/bind_mount/devel
+
+Name: robotic_deposition
+Description: Description of robotic_deposition
+Version: 0.0.0
+Cflags: -I/home/docker/bind_mount/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

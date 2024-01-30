@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch> 
+
+  <param name="sim" type="bool" value="true" />
+  <param name="load_program_and_play" type="bool" value="true" />
+  <node name="ur5e_node" pkg="robotic_deposition" type="ur5e_node.py" output="screen" /> 
+  <node name="controller_node" pkg="robotic_deposition" type="bioprint_with_gcode.py" output="screen"  />
+  <node name="dearpygui_plotting_node" pkg="robotic_deposition" type="dearpygui_plotting_node.py" output="screen"  /> 
+
+ 
+</launch>
+

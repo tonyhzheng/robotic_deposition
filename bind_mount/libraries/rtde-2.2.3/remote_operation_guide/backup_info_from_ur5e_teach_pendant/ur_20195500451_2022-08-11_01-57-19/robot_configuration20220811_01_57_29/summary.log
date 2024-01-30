@@ -1,0 +1,98 @@
+== Incident Report ==
+
+Incident Time: Thu Aug 11 01:57:29 CEST 2022
+Reporting Time: Thu Aug 11 01:57:29 CEST 2022
+
+== PolyScope Probe ==
+
+Serial number: 20195500451
+Version: URSoftware 5.9.5.1031259 (Feb 05 2021)
+Current Installation Name: default
+Current Program Name: <unnamed>
+Current Program State: STOPPED
+Latest Program Indicator: null
+
+== URCap Contributions ==
+
+URCap Name: Ethernet/IP
+URCap Version: 1.2.4
+Developer: Universal Robots
+Contact Info: null
+Description: null
+Copyright: null
+Licese Type: null
+
+URCap Name: Profinet
+URCap Version: 1.2.4
+Developer: Universal Robots
+Contact Info: null
+Description: PROFINET URCap
+Copyright: Copyright (C) 2009-2016 Universal Robots. All Rights Reserved
+Licese Type: Copyright (C) 2009-2016 Universal Robots. All Rights Reserved
+
+URCap Name: Conveyor Tracking
+URCap Version: 1.3.19
+Developer: Universal Robots
+Contact Info: null
+Description: null
+Copyright: null
+Licese Type: null
+
+URCap Name: polyscope-screwdriving-impl
+URCap Version: 3.3.12
+Developer: Universal Robots
+Contact Info: Energivej 25, 5260 Odense S, Denmark
+Description: Screwdriving
+Copyright: Copyright (C) 2009-2017 Universal Robots. All Rights Reserved
+Licese Type: Sample license
+
+URCap Name: Robotiq_3-Finger_Adaptive_Gripper
+URCap Version: 1.0.1
+Developer: Robotiq inc.
+Contact Info: 966, chemin Olivier, Suite 325, Levis, Qc, G7A 2N1, Canada
+Description: URCap for programming a Robotiq 3-Finger Adaptive Gripper
+Copyright: Copyright (C) 2018, Robotiq inc. All Rights Reserved
+Licese Type: See End-User License Agreement below
+
+URCap Name: pallet-impl
+URCap Version: 10.9.277
+Developer: Universal Robots
+Contact Info: Energivej 25, 5260 Odense S, Denmark
+Description: Palletizing
+Copyright: Copyright (C) 2009-2017 Universal Robots. All Rights Reserved
+Licese Type: Sample license
+
+
+== Metrics ==
+
+
+== Logging Probe ==
+
+
+== Controller Files Probe ==
+
+
+== System Probe ==
+
+System Time: Thu Aug 11 01:57:29 CEST 2022
+Free Memory: 91237456
+Total Memory: 309125120
+Max Memory: 437911552
+System Load Average: 0.87
+Loaded Class Count: 17166
+Total Loaded Class Count: 17166
+Boot Class Path: /usr/lib/jvm/java-8-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-i386/jre/classes
+Class Path: bin/felix.jar
+Library Path: /usr/lib/jni
+VM Uptime: 663906
+VM Name: OpenJDK Server VM
+VM Vendor: Oracle Corporation
+VM Version: 25.131-b11
+
+
+== Programs and Installations collector ==
+
+
+== Log History Probe ==
+
+

@@ -1,0 +1,429 @@
+2022-08-11_01:46:24:14800 00:00:00:000 INFO    - parseOpts(): The following ports will be used: Primary - 30001, Secondary - 30002, Matlab - 30003, RTDE - 30004, Primary_read_only - 30011, Secondary_read_only - 30012, Matlab_read_only - 30013.
+2022-08-11_01:46:24:14824 00:00:00:000 INFO    - Locking memory pages
+URControl 30.17.33 [] G5 (19-10-2020, 05:02:41)
+2022-08-11_01:46:24:38266 00:00:00:000 INFO    - Loading calibration from '/root/.urcontrol/calibration.conf'
+2022-08-11_01:46:24:39077 00:00:00:000 WARNING - Configuration property "file_save_count" not found in section "mounting"; setting to default value: "0"
+2022-08-11_01:46:24:39080 00:00:00:000 INFO    - ConfigurationManager::loadConfiguration: Loading urcontrol.conf from: /root/.urcontrol/urcontrol.conf.
+
+2022-08-11_01:46:24:41504 00:00:00:000 INFO    - Safety Version 5:4
+2022-08-11_01:46:24:86652 00:00:00:000 INFO    - Safety Version 5:4
+2022-08-11_01:46:24:86657 00:00:00:000 INFO    - Testing for URbus
+2022-08-11_01:46:24:86659 00:00:00:000 INFO    - URbus was found
+2022-08-11_01:46:24:86661 00:00:00:000 INFO    - ToolCommunicationControl::setupPTY : Slave PTY: /dev/pts/0
+
+2022-08-11_01:46:24:87471 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:89090 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:89094 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:89096 00:00:00:000 INFO    - Safety Version 5:4
+2022-08-11_01:46:24:89903 00:00:00:000 INFO    - Testing for URbus
+2022-08-11_01:46:24:89908 00:00:00:000 INFO    - URbus was found
+2022-08-11_01:46:24:89912 00:00:00:000 INFO    - PreRebooter::reboot - Reboot requested...
+2022-08-11_01:46:24:90720 00:00:00:000 ERROR   - ControlDataReceiver::receiveFromDev: ControlDataReceiver is unable to receive: Failed reading from device: /dev/urbus/robot_ctrl_us. EOF is reached.
+2022-08-11_01:46:24:90724 00:00:00:000 ERROR   - DataDataReader::run: DataDataReader unable to receive: Failed reading from device: /dev/urbus/data_us. EOF is reached.
+2022-08-11_01:46:24:90726 00:00:00:000 ERROR   - PriorityDataReader::run: PriorityDataReader lost connection: Failed reading from device: /dev/urbus/pdata_us. EOF is reached.
+2022-08-11_01:46:24:90728 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:90730 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:90731 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:90733 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:90735 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:90737 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:91546 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:91552 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:91554 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:91556 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:91558 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:91560 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:91562 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:91564 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:91566 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:91568 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:91569 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:91571 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:92380 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:92383 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:92392 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:92394 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:92396 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:92408 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:92410 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:92412 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:92414 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:92416 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:92418 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:92419 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:93227 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:93230 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:93232 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:93234 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:93236 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:93238 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:93240 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:93241 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:93243 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:93245 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:93247 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:93250 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94058 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94061 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:94063 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94065 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94067 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:94069 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94071 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94075 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94079 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:94081 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94083 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94084 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:94892 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94895 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94897 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:94899 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94908 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94910 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:94911 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94913 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94915 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:94917 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:94919 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:94927 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:95734 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:95755 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:24:95771 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:95774 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:95803 00:00:00:000 INFO    - FpgaRebooter::reboot - Reboot requested...
+2022-08-11_01:46:24:95819 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:24:95823 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:95835 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:95837 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:96641 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:96645 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:96647 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:96649 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:97512 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:24:97516 00:00:00:000 INFO    - DataDataReader connected
+2022-08-11_01:46:26:55538 00:00:00:000 INFO    - FpgaRebooter::checkIfFpgaReady - Fpga is ready
+2022-08-11_01:46:26:56351 00:00:00:000 INFO    - Testing for URbus
+2022-08-11_01:46:26:56356 00:00:00:000 INFO    - URbus was found
+2022-08-11_01:46:26:56358 00:00:00:000 INFO    - ToolCommunicationControl::setupPTY : Slave PTY: /dev/pts/0
+
+2022-08-11_01:46:26:56360 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:26:58383 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:26:58388 00:00:00:001 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:46:26:58390 00:00:00:001 INFO    - DataDataReader connected
+2022-08-11_01:46:26:59199 00:00:00:012 INFO    - robot_mode changed from ROBOT_MODE_DISCONNECTED to ROBOT_MODE_BOOTING
+2022-08-11_01:46:36:61842 00:00:00:015 WARNING - FpgaRebooter::checkIfFpgaReady - Fpga is not ready (maximum number of tries exceeded). Will proceede anyhow!
+2022-08-11_01:46:36:62655 00:00:00:015 INFO    - Testing for URbus
+2022-08-11_01:46:36:62659 00:00:00:015 INFO    - URbus was found
+2022-08-11_01:46:36:62675 00:00:00:015 INFO    - ToolCommunicationControl::setupPTY : Slave PTY: /dev/pts/0
+
+2022-08-11_01:46:36:62677 00:00:00:015 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:36:63485 00:00:00:015 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:36:63492 00:00:00:016 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:46:36:63494 00:00:00:016 INFO    - DataDataReader connected
+2022-08-11_01:46:36:65109 00:00:00:025 INFO    - TpRebooter::reboot - Reboot requested...
+2022-08-11_01:46:38:90317 00:00:02:284 INFO    - IMMIFPGARebooter::reboot - Reboot requested...
+2022-08-11_01:46:38:90323 00:00:02:284 INFO    - IMMIRebooter::reboot - Reboot requested...
+2022-08-11_01:46:38:90343 00:00:02:284 INFO    - ScbRebooter::reboot - Reboot requested...
+2022-08-11_01:46:40:90640 00:00:04:284 INFO    - robot_mode changed from ROBOT_MODE_BOOTING to ROBOT_MODE_DISCONNECTED
+2022-08-11_01:46:40:91453 00:00:04:294 INFO    - SCB::update: SafetyA main state changed from UNKNOWN to INITIALIZING
+2022-08-11_01:46:40:91458 00:00:04:294 INFO    - SCB::update: SafetyA safety mode limit state changed from UNKNOWN to NORMAL
+2022-08-11_01:46:40:91461 00:00:04:294 INFO    - SCB::update: SafetyB main state changed from UNKNOWN to INITIALIZING
+2022-08-11_01:46:40:91462 00:00:04:294 INFO    - SCB::update: SafetyB safety mode limit state changed from UNKNOWN to NORMAL
+2022-08-11_01:46:41:16499 00:00:04:546 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:46:41:17315 00:00:04:548 INFO    - TP::update: TP state changed from SELF_DIAGNOSTIC to BOOTING
+2022-08-11_01:46:41:17320 00:00:04:548 INFO    - IMMI::update: DeviceMode A state changed from UNDEFINED to NOT_RESPONDING
+2022-08-11_01:46:41:17322 00:00:04:548 INFO    - IMMI::update: DeviceMode B state changed from UNDEFINED to NOT_RESPONDING
+2022-08-11_01:46:41:17324 00:00:04:548 INFO    - robot_mode changed from ROBOT_MODE_DISCONNECTED to ROBOT_MODE_CONFIRM_SAFETY
+2022-08-11_01:46:41:17326 00:00:04:548 INFO    - scb_mode changed from SCB_MODE_DISCONNECTED to SCB_MODE_INITIALIZING
+URControl::handler caught SIGTERM
+2022-08-11_01:46:55:64312 00:00:19:023 INFO    - RTM: Target RobotMode changed from ROBOT_MODE_DISCONNECTED to ROBOT_MODE_BOOTING
+2022-08-11_01:46:55:64316 00:00:19:023 INFO    - New safety mode: SAFETY_MODE_ROBOT_EMERGENCY_STOP
+2022-08-11_01:46:55:64318 00:00:19:023 INFO    - Runtime state change: from PROGRAM_STATE_STOPPING to PROGRAM_STATE_STOPPED
+URControl::shutdown
+2022-08-11_01:46:57:43922 00:00:00:000 INFO    - parseOpts(): The following ports will be used: Primary - 30001, Secondary - 30002, Matlab - 30003, RTDE - 30004, Primary_read_only - 30011, Secondary_read_only - 30012, Matlab_read_only - 30013.
+2022-08-11_01:46:57:50378 00:00:00:000 INFO    - Locking memory pages
+URControl 30.17.33 [] G5 (19-10-2020, 05:02:41)
+2022-08-11_01:46:57:51191 00:00:00:000 INFO    - Loading calibration from '/root/.urcontrol/calibration.conf'
+2022-08-11_01:46:57:51196 00:00:00:000 WARNING - Configuration property "file_save_count" not found in section "mounting"; setting to default value: "0"
+2022-08-11_01:46:57:51198 00:00:00:000 INFO    - ConfigurationManager::loadConfiguration: Loading urcontrol.conf from: /root/.urcontrol/urcontrol.conf.
+
+2022-08-11_01:46:57:51230 00:00:00:000 INFO    - Safety Version 5:4
+2022-08-11_01:46:57:65883 00:00:00:000 INFO    - Safety Version 5:4
+2022-08-11_01:46:57:66697 00:00:00:000 INFO    - Testing for URbus
+2022-08-11_01:46:57:66707 00:00:00:000 INFO    - URbus was found
+2022-08-11_01:46:57:66709 00:00:00:000 INFO    - ToolCommunicationControl::setupPTY : Slave PTY: /dev/pts/0
+
+2022-08-11_01:46:57:66711 00:00:00:000 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:57:69132 00:00:00:000 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:57:69161 00:00:00:001 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:46:57:69164 00:00:00:002 INFO    - DataDataReader connected
+2022-08-11_01:46:57:69166 00:00:00:003 INFO    - Safety Version 5:4
+2022-08-11_01:46:57:69168 00:00:00:005 INFO    - Testing for URbus
+2022-08-11_01:46:57:69170 00:00:00:005 INFO    - URbus was found
+2022-08-11_01:46:57:69171 00:00:00:005 INFO    - PreRebooter::reboot - Reboot requested...
+2022-08-11_01:46:57:90137 00:00:00:216 INFO    - FpgaRebooter::reboot - Reboot requested...
+2022-08-11_01:46:57:90151 00:00:00:216 ERROR   - ControlDataReceiver::receiveFromDev: ControlDataReceiver is unable to receive: Failed reading from device: /dev/urbus/robot_ctrl_us. EOF is reached.
+2022-08-11_01:46:57:90153 00:00:00:216 ERROR   - PriorityDataReader::run: PriorityDataReader lost connection: Failed reading from device: /dev/urbus/pdata_us. EOF is reached.
+2022-08-11_01:46:57:90155 00:00:00:216 ERROR   - DataDataReader::run: DataDataReader unable to receive: Failed reading from device: /dev/urbus/data_us. EOF is reached.
+2022-08-11_01:46:57:90964 00:00:00:216 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:57:90969 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:90972 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:90974 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:91777 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:91792 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:91796 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:91818 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:94859 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:57:94863 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:59:50797 00:00:00:216 INFO    - FpgaRebooter::checkIfFpgaReady - Fpga is ready
+2022-08-11_01:46:59:50805 00:00:00:216 INFO    - Testing for URbus
+2022-08-11_01:46:59:50807 00:00:00:216 INFO    - URbus was found
+2022-08-11_01:46:59:51617 00:00:00:216 INFO    - ToolCommunicationControl::setupPTY : Slave PTY: /dev/pts/0
+
+2022-08-11_01:46:59:51621 00:00:00:216 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:46:59:52430 00:00:00:216 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:46:59:52437 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:46:59:54055 00:00:00:216 INFO    - robot_mode changed from ROBOT_MODE_DISCONNECTED to ROBOT_MODE_BOOTING
+2022-08-11_01:47:00:94506 00:00:00:216 ERROR   - ControlDataReceiver::receiveFromDev: ControlDataReceiver is unable to receive: Failed reading from device: /dev/urbus/robot_ctrl_us. EOF is reached.
+2022-08-11_01:47:00:94511 00:00:00:216 ERROR   - DataDataReader::run: DataDataReader unable to receive: Failed reading from device: /dev/urbus/data_us. EOF is reached.
+2022-08-11_01:47:00:94513 00:00:00:216 ERROR   - PriorityDataReader::run: PriorityDataReader lost connection: Failed reading from device: /dev/urbus/pdata_us. EOF is reached.
+2022-08-11_01:47:00:95320 00:00:00:216 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:47:00:95346 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:95351 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:95376 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:95381 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:96218 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:96223 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:96225 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:96227 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:97054 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:00:97058 00:00:00:216 INFO    - DataDataReader connected
+2022-08-11_01:47:02:55306 00:00:00:216 INFO    - FpgaRebooter::checkIfFpgaReady - Fpga is ready
+2022-08-11_01:47:02:56118 00:00:00:216 INFO    - Testing for URbus
+2022-08-11_01:47:02:56122 00:00:00:216 INFO    - URbus was found
+2022-08-11_01:47:02:56124 00:00:00:216 INFO    - ToolCommunicationControl::setupPTY : Slave PTY: /dev/pts/0
+
+2022-08-11_01:47:02:56126 00:00:00:216 INFO    - PriorityDataReader::run: PriorityDataReader connected
+2022-08-11_01:47:02:56936 00:00:00:216 INFO    - ControlDataReceiver::connectIfNot: ControlDataReceiver connected
+2022-08-11_01:47:02:56942 00:00:00:217 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:02:56944 00:00:00:217 INFO    - DataDataReader connected
+2022-08-11_01:47:02:58563 00:00:00:226 INFO    - TpRebooter::reboot - Reboot requested...
+2022-08-11_01:47:05:91075 00:00:03:553 INFO    - IMMIFPGARebooter::reboot - Reboot requested...
+2022-08-11_01:47:05:91081 00:00:03:553 INFO    - IMMIRebooter::reboot - Reboot requested...
+2022-08-11_01:47:05:91083 00:00:03:553 INFO    - ScbRebooter::reboot - Reboot requested...
+2022-08-11_01:47:07:90538 00:00:05:551 INFO    - robot_mode changed from ROBOT_MODE_BOOTING to ROBOT_MODE_DISCONNECTED
+2022-08-11_01:47:07:91361 00:00:05:561 INFO    - SCB::update: SafetyA main state changed from UNKNOWN to INITIALIZING
+2022-08-11_01:47:07:91366 00:00:05:561 INFO    - SCB::update: SafetyA safety mode limit state changed from UNKNOWN to NORMAL
+2022-08-11_01:47:07:91369 00:00:05:561 INFO    - SCB::update: SafetyB main state changed from UNKNOWN to INITIALIZING
+2022-08-11_01:47:07:91370 00:00:05:562 INFO    - SCB::update: SafetyB safety mode limit state changed from UNKNOWN to NORMAL
+2022-08-11_01:47:08:16436 00:00:05:808 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:08:16441 00:00:05:810 INFO    - TP::update: TP state changed from SELF_DIAGNOSTIC to BOOTING
+2022-08-11_01:47:08:16443 00:00:05:810 INFO    - IMMI::update: DeviceMode A state changed from UNDEFINED to NOT_RESPONDING
+2022-08-11_01:47:08:16445 00:00:05:810 INFO    - IMMI::update: DeviceMode B state changed from UNDEFINED to NOT_RESPONDING
+2022-08-11_01:47:08:16447 00:00:05:810 INFO    - robot_mode changed from ROBOT_MODE_DISCONNECTED to ROBOT_MODE_CONFIRM_SAFETY
+2022-08-11_01:47:08:16449 00:00:05:810 INFO    - scb_mode changed from SCB_MODE_DISCONNECTED to SCB_MODE_INITIALIZING
+2022-08-11_01:47:13:28660 00:00:10:935 INFO    - TCPServer: Accepted connection on CLIENTTYPE_MATLAB_CLIENT interface
+2022-08-11_01:47:13:77029 00:00:11:413 INFO    - TCPServer: Accepted connection on CLIENTTYPE_PRIMARY_CLIENT interface
+2022-08-11_01:47:13:97183 00:00:11:616 INFO    - TCPServer: Accepted connection on CLIENTTYPE_RTDE_CLIENT interface
+2022-08-11_01:47:13:97192 00:00:11:616 INFO    - TCPServer: RTDE client connected
+2022-08-11_01:47:13:97194 00:00:11:619 INFO    - RTDE: Client connected with protocol version: 2
+2022-08-11_01:47:13:98003 00:00:11:623 INFO    - RTDE: Paused sending RT data
+2022-08-11_01:47:13:98814 00:00:11:634 INFO    - RTDE: Started sending RT data
+2022-08-11_01:47:14:14154 00:00:11:787 INFO    - CONFIRM_USER_SAFETY_PARAMETERS
+2022-08-11_01:47:14:14159 00:00:11:789 INFO    - SCB::update: SafetyA main state changed from INITIALIZING to IDLE
+2022-08-11_01:47:14:14161 00:00:11:789 INFO    - SCB::update: SafetyB main state changed from INITIALIZING to IDLE
+2022-08-11_01:47:14:14974 00:00:11:791 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:14995 00:00:11:794 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:14997 00:00:11:796 INFO    - TP::update: TP state changed from BOOTING to IDLE
+2022-08-11_01:47:14:14999 00:00:11:797 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:15811 00:00:11:800 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:15816 00:00:11:803 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:15819 00:00:11:806 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:16629 00:00:11:809 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:16634 00:00:11:812 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:16636 00:00:11:815 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:17446 00:00:11:816 INFO    - TPSerialNumberReceiver::parse - Serial number received: 
+2022-08-11_01:47:14:17452 00:00:11:818 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:17454 00:00:11:821 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:18265 00:00:11:824 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:18271 00:00:11:827 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:18278 00:00:11:830 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:19179 00:00:11:833 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:19193 00:00:11:835 INFO    - TP::update: TP state changed from IDLE to RUNNING
+2022-08-11_01:47:14:19196 00:00:11:836 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:19198 00:00:11:839 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:20005 00:00:11:842 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:20011 00:00:11:845 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:20013 00:00:11:848 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:20824 00:00:11:851 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:20830 00:00:11:854 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:20832 00:00:11:857 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:21643 00:00:11:860 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:21648 00:00:11:863 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:22459 00:00:11:866 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:22465 00:00:11:869 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:22467 00:00:11:872 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:23282 00:00:11:875 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:23288 00:00:11:878 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:23290 00:00:11:881 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:24099 00:00:11:884 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:24105 00:00:11:887 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:24108 00:00:11:890 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:24924 00:00:11:893 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:24928 00:00:11:896 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:25739 00:00:11:899 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:25746 00:00:11:902 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:25748 00:00:11:905 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:26559 00:00:11:908 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:26566 00:00:11:911 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:26568 00:00:11:914 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:27378 00:00:11:917 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:27390 00:00:11:920 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:27392 00:00:11:923 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:28233 00:00:11:926 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:28241 00:00:11:929 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:29053 00:00:11:932 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:29059 00:00:11:935 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:29061 00:00:11:938 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:29879 00:00:11:941 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:29888 00:00:11:944 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:29890 00:00:11:947 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:30699 00:00:11:950 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:30707 00:00:11:953 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:30709 00:00:11:956 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:31529 00:00:11:959 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:31535 00:00:11:962 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:32344 00:00:11:965 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:32350 00:00:11:968 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:32352 00:00:11:971 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:33163 00:00:11:974 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:33168 00:00:11:977 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:33170 00:00:11:980 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:33984 00:00:11:983 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:33989 00:00:11:986 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:33991 00:00:11:989 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:34803 00:00:11:992 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:34808 00:00:11:995 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:35618 00:00:11:998 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:35624 00:00:12:001 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:35626 00:00:12:004 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:36436 00:00:12:007 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:36441 00:00:12:010 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:36443 00:00:12:013 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:37253 00:00:12:016 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:37259 00:00:12:019 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:38069 00:00:12:022 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:38080 00:00:12:025 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:38090 00:00:12:028 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:38900 00:00:12:031 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:38908 00:00:12:034 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:38910 00:00:12:037 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:39720 00:00:12:040 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:39726 00:00:12:043 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:39728 00:00:12:046 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:40538 00:00:12:049 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:40544 00:00:12:052 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:41355 00:00:12:055 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:41361 00:00:12:058 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:41363 00:00:12:061 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:42181 00:00:12:064 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:42189 00:00:12:067 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:42191 00:00:12:070 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:42999 00:00:12:073 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:43003 00:00:12:076 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:43005 00:00:12:079 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:43813 00:00:12:082 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:43817 00:00:12:085 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:44627 00:00:12:088 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:44630 00:00:12:091 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:44632 00:00:12:094 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:45440 00:00:12:097 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:45442 00:00:12:100 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:45444 00:00:12:103 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:46252 00:00:12:106 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:46255 00:00:12:109 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:47063 00:00:12:112 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:47066 00:00:12:115 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:47068 00:00:12:118 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:47881 00:00:12:121 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:47884 00:00:12:124 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:47886 00:00:12:127 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:48694 00:00:12:130 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:48697 00:00:12:133 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:48699 00:00:12:136 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:49508 00:00:12:139 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:49511 00:00:12:142 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:50319 00:00:12:145 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:50321 00:00:12:148 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:50323 00:00:12:151 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:51131 00:00:12:154 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:51134 00:00:12:157 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:51136 00:00:12:160 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:51945 00:00:12:163 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:51949 00:00:12:166 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:52758 00:00:12:169 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:52760 00:00:12:172 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:52762 00:00:12:175 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:53573 00:00:12:178 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:53582 00:00:12:181 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:53584 00:00:12:184 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:54392 00:00:12:187 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:54395 00:00:12:190 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:54397 00:00:12:193 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:55205 00:00:12:196 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:55217 00:00:12:199 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:56025 00:00:12:202 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:56028 00:00:12:205 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:56030 00:00:12:208 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:56838 00:00:12:211 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:56840 00:00:12:214 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:56842 00:00:12:217 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:57650 00:00:12:220 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:57653 00:00:12:223 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:58461 00:00:12:226 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:58464 00:00:12:229 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:58466 00:00:12:232 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:59275 00:00:12:235 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:59280 00:00:12:238 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:59282 00:00:12:241 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:60090 00:00:12:244 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:60093 00:00:12:247 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:60095 00:00:12:250 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:60905 00:00:12:253 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:60916 00:00:12:256 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:61725 00:00:12:259 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:61730 00:00:12:262 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:61732 00:00:12:265 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:62540 00:00:12:268 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:62544 00:00:12:271 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:62546 00:00:12:274 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:63354 00:00:12:277 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:63357 00:00:12:280 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:64165 00:00:12:283 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:64167 00:00:12:286 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:64170 00:00:12:289 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:64981 00:00:12:292 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:64984 00:00:12:295 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:64986 00:00:12:297 INFO    - SCB::update: SafetyA main state changed from IDLE to RUNNING
+2022-08-11_01:47:14:64988 00:00:12:298 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:65796 00:00:12:301 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:65798 00:00:12:304 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:65803 00:00:12:306 INFO    - SCB::update: SafetyA safety state changed from ROBOT_OFF to EMERGENCY_STOP_ROBOT
+2022-08-11_01:47:14:65805 00:00:12:306 INFO    - SCB::update: SafetyB main state changed from IDLE to RUNNING
+2022-08-11_01:47:14:65807 00:00:12:306 INFO    - SCB::update: SafetyB safety state changed from ROBOT_OFF to EMERGENCY_STOP_ROBOT
+2022-08-11_01:47:14:65809 00:00:12:306 INFO    - robot_mode changed from ROBOT_MODE_CONFIRM_SAFETY to ROBOT_MODE_POWER_OFF
+2022-08-11_01:47:14:65811 00:00:12:306 INFO    - scb_mode changed from SCB_MODE_INITIALIZING to SCB_MODE_RUNNING
+2022-08-11_01:47:14:65813 00:00:12:307 WARNING - Runtime is blocked, but runtime data queue is empty, trying to recover
+2022-08-11_01:47:14:66621 00:00:12:309 INFO    - RTM: Target RobotMode changed from ROBOT_MODE_DISCONNECTED to ROBOT_MODE_POWER_OFF
+2022-08-11_01:47:14:66625 00:00:12:309 INFO    - Operational mode changed from DISABLED to AUTOMATIC
+2022-08-11_01:47:14:66627 00:00:12:309 INFO    - New safety mode: SAFETY_MODE_ROBOT_EMERGENCY_STOP
+2022-08-11_01:47:14:66629 00:00:12:309 INFO    - Runtime state change: from PROGRAM_STATE_STOPPING to PROGRAM_STATE_STOPPED
+2022-08-11_01:47:14:66631 00:00:12:311 ERROR   - Secondary program exception: set_runstate_configurable_digital_output_to_value: Cannot write configurable output (6), since it is used for safety purposes
+2022-08-11_01:47:14:66633 00:00:12:314 ERROR   - Secondary program exception: set_runstate_configurable_digital_output_to_value: Cannot write configurable output (6), since it is used for safety purposes
+2022-08-11_01:47:15:11808 00:00:12:765 INFO    - tool_mode changed from UNDEFINED to NOT_RESPONDING
+2022-08-11_01:47:17:66497 00:00:15:311 ERROR   - LLInterface::areJointsReadyforID: Not all configured joints are connected
+2022-08-11_01:49:31:68325 00:02:29:329 INFO    - New safety mode: SAFETY_MODE_NORMAL
+2022-08-11_01:49:31:69136 00:02:29:337 INFO    - SCB::update: SafetyB safety state changed from EMERGENCY_STOP_ROBOT to ROBOT_OFF
+2022-08-11_01:49:31:69139 00:02:29:339 INFO    - SCB::update: SafetyA safety state changed from EMERGENCY_STOP_ROBOT to ROBOT_OFF
+2022-08-11_01:56:56:61416 00:09:54:275 INFO    - Operational mode changed from AUTOMATIC to MANUAL

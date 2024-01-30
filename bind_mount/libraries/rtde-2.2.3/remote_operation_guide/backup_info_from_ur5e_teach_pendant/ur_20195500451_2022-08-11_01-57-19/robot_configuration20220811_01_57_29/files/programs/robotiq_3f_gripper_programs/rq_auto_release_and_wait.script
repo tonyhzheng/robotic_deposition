@@ -1,0 +1,30 @@
+def rq_auto_release_and_wait():
+  modbus_add_signal("192.168.1.20", 255, 0, 3, "gripper_O0")
+  modbus_set_signal_update_frequency("gripper_O0", 10)
+  modbus_add_signal("192.168.1.20", 255, 1, 3, "gripper_O1")
+  modbus_set_signal_update_frequency("gripper_O1", 10)
+  modbus_add_signal("192.168.1.20", 255, 2, 3, "gripper_O2")
+  modbus_set_signal_update_frequency("gripper_O2", 10)
+  modbus_add_signal("192.168.1.20", 255, 0, 2, "gripper_I0")
+  modbus_set_signal_update_frequency("gripper_I0", 10)
+  modbus_add_signal("192.168.1.20", 255, 1, 2, "gripper_I1")
+  modbus_set_signal_update_frequency("gripper_I1", 10)
+  set_analog_inputrange(0, 0)
+  set_analog_inputrange(1, 0)
+  set_analog_inputrange(2, 0)
+  set_analog_inputrange(3, 0)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_tool_voltage(0)
+  set_runstate_outputs([])
+  modbus_set_runstate_dependent_choice("gripper_O0",0)
+  modbus_set_runstate_dependent_choice("gripper_O1",0)
+  modbus_set_runstate_dependent_choice("gripper_O2",0)
+  set_payload(3.3)
+  set_gravity([0.0, 0.0, 9.82])
+  while (True):
+    $ 1 "Robot Program"
+    $ 2 "rq_auto_release_and_wait()"
+    rq_auto_release_and_wait()
+  end
+end

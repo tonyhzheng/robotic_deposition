@@ -1,0 +1,17 @@
+def rq_close():
+  set_analog_inputrange(0, 0)
+  set_analog_inputrange(1, 0)
+  set_analog_inputrange(2, 0)
+  set_analog_inputrange(3, 0)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_tool_voltage(0)
+  set_runstate_outputs([])
+  set_payload(0.0)
+  set_gravity([0.0, 0.0, 9.82])
+  while (True):
+    $ 1 "Robot Program"
+    $ 2 "rq_close()"
+    rq_close()
+  end
+end

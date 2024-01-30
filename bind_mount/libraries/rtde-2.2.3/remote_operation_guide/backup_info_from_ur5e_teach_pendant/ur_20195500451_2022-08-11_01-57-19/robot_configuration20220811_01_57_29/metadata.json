@@ -1,0 +1,949 @@
+{
+  "reportId" : "robot_configuration20220811_01_57_29",
+  "reportType" : "SYSTEM_CONFIGURATION_REPORT",
+  "files" : [ {
+    "path" : "summary.log",
+    "size" : 2738,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_3FG_api.script",
+    "size" : 8074,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/analog_out_test.script",
+    "size" : 12138,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_stop.urp",
+    "size" : 1233,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_activate_and_wait.script",
+    "size" : 422,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_close.script",
+    "size" : 386,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_basic_mode.urp",
+    "size" : 1300,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_bioprint.old3",
+    "size" : 3549,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old7",
+    "size" : 1609,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/defaultno_obj.installation",
+    "size" : 2507,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.old0",
+    "size" : 1121,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_pinch_mode.script",
+    "size" : 1158,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/swing.script",
+    "size" : 12917,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/position.old8",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_move.urp",
+    "size" : 1257,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_auto_release_and_wait.script",
+    "size" : 1179,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/df",
+    "size" : 619,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/defaultno_obj.variables",
+    "size" : 32,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/demo_pick_and_place_with_subprograms.urp",
+    "size" : 7922,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old9",
+    "size" : 2537,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/default20210926.variables",
+    "size" : 33,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_move.script",
+    "size" : 395,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/log_history.txt",
+    "size" : 28966838,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/position.old2",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_activate.script",
+    "size" : 395,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old4",
+    "size" : 3519,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/kendama.installation",
+    "size" : 2477,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/kendama2.installation",
+    "size" : 2390,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/test.urp",
+    "size" : 886,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/position.urp",
+    "size" : 1126,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/test.script",
+    "size" : 11854,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_move.urp",
+    "size" : 1257,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_speed.script",
+    "size" : 414,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_speed.script",
+    "size" : 414,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop.script",
+    "size" : 17163,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old8",
+    "size" : 2613,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/advanced_template.urp",
+    "size" : 6948,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_reset.urp",
+    "size" : 1238,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/advanced_template.script",
+    "size" : 12378,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/polyscope.in.memory.program.urp",
+    "size" : 238,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/remote_control.script",
+    "size" : 14742,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/force-move.old1",
+    "size" : 1752,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old3",
+    "size" : 1674,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_basic_mode.script",
+    "size" : 1158,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/force-move.old3",
+    "size" : 1629,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.old6",
+    "size" : 1523,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_auto_release_and_wait.script",
+    "size" : 1179,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/advanced_template.script",
+    "size" : 12378,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_close.urp",
+    "size" : 1238,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_force.urp",
+    "size" : 1291,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old4",
+    "size" : 1595,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_kendama.urp",
+    "size" : 3514,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old0",
+    "size" : 1739,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_close_and_wait.urp",
+    "size" : 1290,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_move_and_wait.script",
+    "size" : 422,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/default.installation",
+    "size" : 2378,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop.urp",
+    "size" : 3502,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_auto_release_and_wait.urp",
+    "size" : 1336,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/ramp_velocity.script",
+    "size" : 12240,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/ramp_velocity.old7",
+    "size" : 1523,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.old9",
+    "size" : 1514,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/demo_pick_and_place_async_opening_without_subprograms.urp",
+    "size" : 7377,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/a.urp",
+    "size" : 1000,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old2",
+    "size" : 1675,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_print_fault_code.urp",
+    "size" : 1300,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/force-move.urp",
+    "size" : 1838,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.old5",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/a.script",
+    "size" : 11470,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_3FG_api.script",
+    "size" : 8074,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/swingcupup.old9",
+    "size" : 1348,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_bioprint.old2",
+    "size" : 3562,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/velocity-move.script",
+    "size" : 12396,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_script.script",
+    "size" : 9987,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/kendama_homefloor.variables",
+    "size" : 33,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_auto_release_and_wait.urp",
+    "size" : 1336,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/default.installation",
+    "size" : 2378,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/Xorg.0.log",
+    "size" : 20686,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/default20210926.installation",
+    "size" : 2410,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_wide_mode.urp",
+    "size" : 1295,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_pinch_mode.urp",
+    "size" : 1300,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/position.script",
+    "size" : 11852,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop_kendama.old1",
+    "size" : 3507,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_scissor_mode.script",
+    "size" : 1164,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old3",
+    "size" : 3425,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/test_gripper.urp",
+    "size" : 8438,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/system.environment.txt",
+    "size" : 4365,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/demo_pick_and_place_with_subprograms.urp",
+    "size" : 7922,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.old4",
+    "size" : 1537,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_stop.script",
+    "size" : 383,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/position.old7",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_close.script",
+    "size" : 386,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/velocity-move.urp",
+    "size" : 1552,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_pinch_mode.script",
+    "size" : 1158,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/force-move.old2",
+    "size" : 1754,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swing2.old0",
+    "size" : 1335,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.old3",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old8",
+    "size" : 1403,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_kendama.script",
+    "size" : 17525,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_stop.urp",
+    "size" : 1233,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_reset.script",
+    "size" : 386,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/demo_pick_and_place_async_opening_without_subprograms.script",
+    "size" : 12782,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_open_and_wait.urp",
+    "size" : 1285,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swing.old0",
+    "size" : 1334,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/ramp_velocity.urp",
+    "size" : 1485,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old6",
+    "size" : 1591,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.old2",
+    "size" : 1488,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_3FG.installation",
+    "size" : 2493,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_print_fault_code.script",
+    "size" : 419,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/test_gripper.script",
+    "size" : 19504,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/swing2.script",
+    "size" : 12859,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/demo_pick_and_place_async_opening_without_subprograms.script",
+    "size" : 12782,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_activate_and_wait.script",
+    "size" : 422,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/backup_rtde_control_loop.urp",
+    "size" : 2537,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup2.old0",
+    "size" : 1754,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.old4",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swing2.urp",
+    "size" : 1475,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old6",
+    "size" : 2615,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_bioprint.urp",
+    "size" : 3684,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/urcontrol/calibration.conf",
+    "size" : 1021,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/log_history.bak",
+    "size" : 31490176,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/programs/velocity-move.urp",
+    "size" : 1558,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/basic_template.script",
+    "size" : 10918,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old0",
+    "size" : 3481,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.old3",
+    "size" : 1488,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/advanced_template.urp",
+    "size" : 6948,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.old5",
+    "size" : 1537,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_close_and_wait.script",
+    "size" : 413,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/ramp_velocity.old8",
+    "size" : 1514,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/analog_out_test.old0",
+    "size" : 904,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.script",
+    "size" : 14748,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_pinch_mode.urp",
+    "size" : 1300,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.urp",
+    "size" : 1485,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_3FG.installation",
+    "size" : 2493,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/default.variables",
+    "size" : 33,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_open.script",
+    "size" : 383,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_move_and_wait.script",
+    "size" : 422,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/programs/test.script",
+    "size" : 12010,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/default.variables",
+    "size" : 33,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_stop.script",
+    "size" : 383,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_reset.script",
+    "size" : 386,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_wide_mode.urp",
+    "size" : 1295,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup2.script",
+    "size" : 14750,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_print_fault_code.script",
+    "size" : 419,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/kendama2.variables",
+    "size" : 33,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/swingcupup2.old1",
+    "size" : 1754,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/kendama_homefloor.installation",
+    "size" : 2398,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old7",
+    "size" : 2613,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_close.urp",
+    "size" : 1238,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/critical",
+    "size" : 30231,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop_new.script",
+    "size" : 14427,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/ramp_velocity.old0",
+    "size" : 1474,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/demo_pick_and_place_async_opening_without_subprograms.urp",
+    "size" : 7377,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old1",
+    "size" : 3479,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_open.script",
+    "size" : 383,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old2",
+    "size" : 3480,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/Put_into_box_E-series_UR5.urp",
+    "size" : 2580,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/Put_into_box_E-series_UR5.urp",
+    "size" : 2580,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_force.script",
+    "size" : 414,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_reset.urp",
+    "size" : 1238,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_force.script",
+    "size" : 414,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/ps",
+    "size" : 22044,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/default.installation",
+    "size" : 2264,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_kendama.old2",
+    "size" : 3507,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/test.urp",
+    "size" : 892,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_force.urp",
+    "size" : 1291,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_open.urp",
+    "size" : 1232,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_move_and_wait.urp",
+    "size" : 1308,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/urcontrol/safety.conf",
+    "size" : 3478,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop_bioprint.old0",
+    "size" : 3597,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swing.urp",
+    "size" : 1335,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/programs/test.old0",
+    "size" : 897,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_basic_mode.urp",
+    "size" : 1300,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop.old5",
+    "size" : 3457,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/basic_template.urp",
+    "size" : 5409,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/test_gripper.urp",
+    "size" : 8438,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old1",
+    "size" : 1700,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_kendama.old0",
+    "size" : 3514,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_script.script",
+    "size" : 9987,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_activate.urp",
+    "size" : 1256,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/default.variables",
+    "size" : 32,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_speed.urp",
+    "size" : 1287,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_activate.urp",
+    "size" : 1256,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_open_and_wait.script",
+    "size" : 410,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/test.script",
+    "size" : 11854,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_scissor_mode.urp",
+    "size" : 1311,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_close_and_wait.urp",
+    "size" : 1290,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/urcontrol/URControl.log.0",
+    "size" : 45859,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/swing.old1",
+    "size" : 1239,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_open_and_wait.urp",
+    "size" : 1285,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/histogram.properties",
+    "size" : 3133,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/urcontrol/urcontrol.conf",
+    "size" : 1673,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/basic_template.script",
+    "size" : 10918,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_move_and_wait.urp",
+    "size" : 1308,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.old5",
+    "size" : 1595,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.old9",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/demo_pick_and_place_with_subprograms.script",
+    "size" : 13383,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/swingcupup2.urp",
+    "size" : 1754,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.urp",
+    "size" : 1126,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/polyscope.log",
+    "size" : 1607185,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_wide_mode.script",
+    "size" : 1155,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_basic_mode.script",
+    "size" : 1158,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/ramp_velocity.old1",
+    "size" : 1474,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/analog_out_test.urp",
+    "size" : 1062,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/force-move.script",
+    "size" : 12644,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/force-move.old0",
+    "size" : 1775,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_activate.script",
+    "size" : 395,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/basic_template.urp",
+    "size" : 5409,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/polyscope.threads.txt",
+    "size" : 2017,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_set_scissor_mode.urp",
+    "size" : 1311,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/test_gripper.script",
+    "size" : 19504,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/test.old0",
+    "size" : 870,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.script",
+    "size" : 11852,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop_bioprint.old1",
+    "size" : 3596,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_close_and_wait.script",
+    "size" : 413,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_open_and_wait.script",
+    "size" : 410,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_open.urp",
+    "size" : 1232,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.old1",
+    "size" : 1121,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/ramp_velocity.script",
+    "size" : 12240,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/urcontrol/calibration.log",
+    "size" : 468358,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_activate_and_wait.urp",
+    "size" : 1307,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_move.script",
+    "size" : 395,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_wide_mode.script",
+    "size" : 1155,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_scissor_mode.script",
+    "size" : 1164,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/backup_rtde_control_loop.script",
+    "size" : 3111,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_set_speed.urp",
+    "size" : 1287,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/position.old6",
+    "size" : 1119,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/swingcupup.urp",
+    "size" : 1735,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/psm.ura",
+    "size" : 1019,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/demo_pick_and_place_with_subprograms.script",
+    "size" : 13383,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/robotiq_3f_gripper_programs/rq_activate_and_wait.urp",
+    "size" : 1307,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/rtde_control_loop_new.urp",
+    "size" : 2821,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/remote_control.urp",
+    "size" : 3021,
+    "mimeType" : "application/x-gzip"
+  }, {
+    "path" : "files/programs/kendama.variables",
+    "size" : 33,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/rtde_control_loop_bioprint.script",
+    "size" : 17891,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/kern.log",
+    "size" : 770666,
+    "mimeType" : "text/plain; charset=utf-8"
+  }, {
+    "path" : "files/programs/20195500451/robotiq_3f_gripper_programs/rq_print_fault_code.urp",
+    "size" : 1300,
+    "mimeType" : "application/x-gzip"
+  } ]
+}

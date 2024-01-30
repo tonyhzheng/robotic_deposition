@@ -1,0 +1,2 @@
+robotic_deposition:ros-keyboard:ur_kinematics
+-DPYTHON_EXECUTABLE=/usr/bin/python3.7 -DPYTHON_INCLUDE_DIR=/usr/include/python3.7m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.7m.so -DCATKIN_DEVEL_PREFIX=/home/docker/bind_mount/devel -DCMAKE_INSTALL_PREFIX=/home/docker/bind_mount/install -G Unix Makefiles

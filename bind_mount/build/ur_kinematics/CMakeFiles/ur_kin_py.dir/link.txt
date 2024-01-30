@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared  -o /home/docker/bind_mount/devel/lib/python3/dist-packages/ur_kinematics/ur_kin_py.so CMakeFiles/ur_kin_py.dir/src/ur_kin_py.cpp.o  -Wl,-rpath,/home/docker/bind_mount/devel/lib: /home/docker/bind_mount/devel/lib/libur5_kin.so -lboost_python -lboost_numpy -lpython3.7m -lboost_program_options 

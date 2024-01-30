@@ -1,0 +1,578 @@
+def rtde_control_loop_bioprint():
+  set_standard_analog_input_domain(0, 1)
+  set_standard_analog_input_domain(1, 1)
+  set_tool_analog_input_domain(0, 1)
+  set_tool_analog_input_domain(1, 1)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_input_actions_to_default()
+  set_tool_communication(False, 115200, 0, 1, 1.5, 3.5)
+  set_tool_output_mode(0)
+  set_tool_digital_output_mode(0, 1)
+  set_tool_digital_output_mode(1, 1)
+  set_tool_voltage(0)
+  step_count_a8717a01_d8e9_41f1_8556_d494163da28b = 0.0
+  thread Step_Counter_Thread_b5af50ae_3593_4171_94c1_35e81cece50f():
+    while (True):
+      step_count_a8717a01_d8e9_41f1_8556_d494163da28b = step_count_a8717a01_d8e9_41f1_8556_d494163da28b + 1.0
+      sync()
+    end
+  end
+  run Step_Counter_Thread_b5af50ae_3593_4171_94c1_35e81cece50f()
+  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
+  set_payload(0.23, [0.0, 0.0, 0.01])
+  set_safety_mode_transition_hardness(1)
+  set_gravity([0.0, 0.0, 9.82])
+  # begin: URCap Installation Node
+  #   Source: Robotiq_3-Finger_Adaptive_Gripper, 1.0.1, Robotiq inc.
+  #   Type: 3F Gripper
+  modbus_delete_signal("gripper")
+  modbus_add_signal("192.168.1.11",255,0,2,"gripper")
+  modbus_set_signal_update_frequency("gripper", 10)
+  # Robotiq inc.  2017
+  
+  ################################################################
+  ## urcaps for the Robotiq's 3F Gripper
+  ################################################################
+  
+  # aliases for the gripper output names
+  # those values also represent offsets
+  # in control registers
+  rACT = 1
+  rMOD = 2
+  rGTO = 8
+  rATR = 16
+  rPOS = 3
+  rFOR = 5
+  rSPE = 11
+  
+  # aliases for the gripper input names
+  # those values also represent offsets
+  # in control registers
+  gPRE = 1
+  gACT = 8
+  gMOD = 9
+  gMOD1 = 9
+  gMOD2 = 10
+  gFLT = 19
+  gFLT1 = 8
+  gFLT2 = 9
+  gFLT3 = 10
+  gFLT4 = 11
+  gGTO = 11
+  gIMC = 12
+  gIMC1 = 12
+  gIMC2 = 13
+  gSTA = 14
+  gSTA1 = 14
+  gSTA2 = 15
+  
+  #define modbus signal
+  modbus_delete_signal("gripper_O0")
+  modbus_delete_signal("gripper_O1")
+  modbus_delete_signal("gripper_O2")
+  modbus_delete_signal("gripper_I0")
+  modbus_delete_signal("gripper_I1")
+  
+  
+  modbus_add_signal("192.168.1.11",255,0,3,"gripper_O0")
+  modbus_set_signal_update_frequency("gripper_O0", 10)
+  modbus_add_signal("192.168.1.11",255,1,3,"gripper_O1")
+  modbus_set_signal_update_frequency("gripper_O1", 10)
+  modbus_add_signal("192.168.1.11",255,2,3,"gripper_O2")
+  modbus_set_signal_update_frequency("gripper_O2", 10)
+  modbus_add_signal("192.168.1.11",255,0,2,"gripper_I0")
+  modbus_set_signal_update_frequency("gripper_I0", 10)
+  modbus_add_signal("192.168.1.11",255,1,2,"gripper_I1")
+  modbus_set_signal_update_frequency("gripper_I1", 10)
+  modbus_set_runstate_dependent_choice("gripper_O0",0)
+  modbus_set_runstate_dependent_choice("gripper_O1",0)
+  modbus_set_runstate_dependent_choice("gripper_O2",0)
+  
+  
+  
+  
+  # send the activation request to the gripper.
+  def rq_activate():
+  	rq_set_var(rACT,1)
+  
+      ACT = rq_get_var(gACT)
+      while (ACT != 1):
+          ACT = rq_get_var(gACT)
+      end
+  end
+  
+  # send the activation request to the gripper and
+  # wait for its completion.
+  def rq_activate_and_wait():
+  	rq_activate()
+  
+  	while(not rq_is_gripper_activated()):
+  		# wait for activation completed
+  	end
+  end
+  def rq_act_and_wait():
+    rq_activate_and_wait()
+  end
+  
+  # interrupts the gripper motion.
+  def rq_stop():
+  	rq_set_var(rGTO,0)
+  
+      GTO = rq_get_var(gGTO)
+      while (GTO != 0):
+          GTO = rq_get_var(gGTO)
+      end
+  end
+  
+  # resets the activation and auto-release bits.
+  def rq_reset():
+  	rq_set_var(rATR,0)
+  	rq_set_var(rACT,0)
+  
+      ACT = rq_get_var(gACT)
+      while (ACT != 0):
+          ACT = rq_get_var(gACT)
+      end
+  end
+  
+  # send the auto-release request and wait
+  # for its completion
+  def rq_auto_release_and_wait():
+  	rq_set_var(rACT,1)
+  	rq_set_var(rATR,1)
+  
+      ACT = rq_get_var(gACT)
+      while (ACT != 1):
+          ACT = rq_get_var(gACT)
+      end
+  
+  	FLT = rq_get_var(gFLT)
+  	while(FLT != 15):
+  		FLT = rq_get_var(gFLT)
+  	end
+  end
+  
+  # set the force setpoint
+  def rq_set_force(force):
+  	rq_set_var(rFOR,force)
+  end
+  
+  # set the speed setpoint
+  def rq_set_speed(speed):
+  	rq_set_var(rSPE,speed)
+  end
+  
+  # send the open request to the gripper
+  def rq_open():
+  	rq_move(0)
+  end
+  
+  # send the close request to the gripper
+  def rq_close():
+  	rq_move(255)
+  end
+  
+  # send the open request to the gripper and wait
+  # for its completion
+  def rq_open_and_wait():
+  	rq_move_and_wait(0)
+  end
+  def rq_open_wait():
+  	rq_move_and_wait(0)
+  end
+  
+  # send the close request to the gripper and wait
+  # for its completion
+  def rq_close_and_wait():
+  	rq_move_and_wait(255)
+  end
+  def rq_close_wait():
+  	rq_move_and_wait(255)
+  end
+  
+  # send the move request to the position in argument
+  def rq_move(pos):
+  	rq_set_var(rGTO,0)
+  
+  	GTO = rq_get_var(gGTO)
+  	while (GTO != 0):
+  		GTO = rq_get_var(gGTO)
+  	end
+  
+  	rq_set_var(rPOS,pos)
+  
+  	PRE = rq_get_var(gPRE)
+  	while (PRE != pos):
+  		PRE = rq_get_var(gPRE)
+  	end
+  
+  	rq_set_var(rGTO,1)
+  
+  	while (GTO != 1):
+  		GTO = rq_get_var(gGTO)
+  	end
+  
+  end
+  
+  # send the move request to the position in argument
+  # and wait for its completion
+  def rq_move_and_wait(pos):
+  	rq_move(pos)
+  
+  	while (not rq_is_motion_complete()):
+  		# wait for motion completed
+  		sleep(0.01)
+  		sync()
+  	end
+  end
+  def rq_move_wait(pos):
+  	rq_move(pos)
+  
+  	while (not rq_is_motion_complete()):
+  		# wait for motion completed
+  		sleep(0.01)
+  		sync()
+  	end
+  end
+  
+  # send the request to change mode in argument
+  def rq_set_mode(value):
+  	rq_set_var(rMOD, value)
+  
+      MOD = rq_get_var(gMOD)
+      while (MOD != value):
+          MOD = rq_get_var(gMOD)
+      end
+  end
+  
+  # send the request to change to the basic mode
+  def rq_set_basic_mode():
+  	rq_set_mode(0)
+  end
+  def rq_set_basic():
+  	rq_set_mode(0)
+  end
+  
+  # send the request to change to the pinch mode
+  def rq_set_pinch_mode():
+  	rq_set_mode(1)
+  end
+  def rq_set_pinch():
+  	rq_set_mode(1)
+  end
+  
+  # send the request to change to the wide mode
+  def rq_set_wide_mode():
+  	rq_set_mode(2)
+  end
+  def rq_set_wide():
+  	rq_set_mode(2)
+  end
+  
+  # send the request to change to the scissor mode
+  def rq_set_scissor_mode():
+  	rq_set_mode(3)
+  end
+  def rq_set_scissor():
+  	rq_set_mode(3)
+  end
+  
+  # returns True if the gripper has completed its motion
+  # returns False otherwise
+  def rq_is_motion_complete():
+  	STA = rq_get_var(gSTA)
+  
+  	if (STA == 0):
+  		return False
+  	end
+  
+  	return True
+  
+  end
+  
+  # Returns True if the gripper is activated
+  def rq_is_gripper_activated():
+      IMC = rq_get_var(gIMC)
+  
+      if (IMC == 3):
+          return True
+      end
+  
+      return False
+  end
+  
+  # returns True if an object has been detected
+  def rq_is_object_detected():
+  	STA = rq_get_var(gSTA)
+  
+  	if(STA == 1):
+  		return True
+  	elif(STA == 2):
+  		return True
+  	else:
+  		return False
+  	end
+  end
+  def rq_is_obj_detec():
+  	STA = rq_get_var(gSTA)
+  
+  	if(STA == 1):
+  		return True
+  	elif(STA == 2):
+  		return True
+  	else:
+  		return False
+  	end
+  end
+  
+  # prints in the log window the fault status
+  def rq_print_fault_code():
+  	fault_status = rq_get_var(gFLT)
+  
+  	if(fault_status == 0):
+  		textmsg("Gripper Fault : ", "No Fault (0x00)")
+  	elif (fault_status == 5):
+  		textmsg("Gripper Fault : ", "Priority Fault: Action delayed, activation (reactivation) must be completed prior to renewed action (0x05)")
+  	elif (fault_status == 6):
+  		textmsg("Gripper Fault : ", "Priority Fault: Action delayed, mode change must be completed prior to continuing action (0x06)")
+  	elif (fault_status == 7):
+  		textmsg("Gripper Fault : ", "Priority Fault: The activation bit must be set prior to action (0x07)")
+  	elif (fault_status == 9):
+  		textmsg("Gripper Fault : ", "Minor Fault: The communication chip is not ready (may be booting) (0x09)")
+  	elif (fault_status == 10):
+  		textmsg("Gripper Fault : ", "Minor Fault: Changing mode fault, interference detected on Scissor (for less than 20 sec) (0x0A)")
+  	elif (fault_status == 11):
+  		textmsg("Gripper Fault : ", "Minor Fault: Automatic release in progress (0x0B)")
+  	elif (fault_status == 13):
+  		textmsg("Gripper Fault : ", "Major Fault: Activation fault, verify that no interference or other error occurred (0x0D)")
+  	elif (fault_status == 14):
+  		textmsg("Gripper Fault : ", "Major Fault: Changing mode fault, interference detected on Scissor (for more than 20 sec) (0x0E)")
+  	elif (fault_status == 15):
+  		textmsg("Gripper Fault : ", "Major Fault: Automatic release completed. Reset and activation is required (0x0F)")
+  	else:
+  		textmsg("Gripper Fault : ", "Unkwown Fault")
+  	end
+  end
+  
+  # sets the gripper inputs
+  global current_force = 0
+  global current_speed = 0
+  def rq_set_var(name, value):
+  
+  	if (name == rACT):
+          MOD = rq_get_var(gMOD)
+          GTO = rq_get_var(gGTO)
+          modbus_set_output_register("gripper_O0", 256 * (rACT * value + rMOD * MOD + rGTO * GTO), False)
+  	elif (name == rMOD):
+          ACT = rq_get_var(gACT)
+          GTO = rq_get_var(gGTO)
+          modbus_set_output_register("gripper_O0", 256 * (rACT * ACT + rMOD * value + rGTO * GTO), False)
+  	elif (name == rGTO):
+          ACT = rq_get_var(gACT)
+          MOD = rq_get_var(gMOD)
+         	modbus_set_output_register("gripper_O0", 256 * (rACT * ACT + rMOD * MOD + rGTO * value), False)
+  	elif (name == rATR):
+          ACT = rq_get_var(gACT)
+          MOD = rq_get_var(gMOD)
+          GTO = rq_get_var(gGTO)
+         	modbus_set_output_register("gripper_O0", 256 * (rACT * ACT + rMOD * MOD + rGTO * GTO + rATR * value), False)
+  	elif (name == rFOR):
+          current_force = value
+          modbus_set_output_register("gripper_O2", (256 * current_speed + value), False)
+  	elif (name == rSPE):
+          current_speed = value
+         	modbus_set_output_register("gripper_O2", (256 * value + current_force), False)
+  	elif (name == rPOS):
+          modbus_set_output_register("gripper_O1", value, False)
+      else:
+      end
+  
+      sync()
+  end
+  
+  # reads the gripper outputs
+  def rq_get_var(name, nbr_bytes=0):
+      if (name == gACT):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gACT]])
+      elif (name == gMOD):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gMOD1], reg[gMOD2]])
+      elif (name == gGTO):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gGTO]])
+      elif (name == gSTA):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gSTA1], reg[gSTA2]])
+      elif (name == gIMC):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gIMC1], reg[gIMC2]])
+      elif (name == gFLT):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I1", False))
+          value = binary_list_to_integer([reg[gFLT1], reg[gFLT2], reg[gFLT3], reg[gFLT4]])
+      elif (name == gPRE):
+          reg = modbus_get_signal_status("gripper_I1", False)
+          value = reg % 256
+      else:
+     	    value = 0
+      end
+  
+      sync()
+  
+      return value
+  end
+  # end: URCap Installation Node
+  $ 1 "BeforeStart"
+  $ 2 "set_analog_outputdomain(0,0)"
+  set_analog_outputdomain(0,0)
+  $ 3 "ctrl_type≔0"
+  global ctrl_type=0
+  $ 4 "psi_signal≔0"
+  global psi_signal=0
+  $ 5 "selection_vec≔[0,0,0,0,0,0]"
+  global selection_vec=[0,0,0,0,0,0]
+  $ 6 "wrench≔[0,0,0,0,0,0]"
+  global wrench=[0,0,0,0,0,0]
+  $ 7 "limits≔[0,0,0,0,0,0]"
+  global limits=[0,0,0,0,0,0]
+  $ 8 "tmp≔[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"
+  global tmp=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  $ 10 "zero_ftsensor()"
+  zero_ftsensor()
+  $ 27 "Thread_1"
+  thread Thread_1():
+    while (True):
+      $ 28 "Read remote registers"
+      $ 29 "tmp≔[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"
+      global tmp=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      $ 30 "tmp[0] = read_input_float_register(0)"
+      tmp[0] = read_input_float_register(0)
+      $ 31 "tmp[1] = read_input_float_register(1)"
+      tmp[1] = read_input_float_register(1)
+      $ 32 "tmp[2] = read_input_float_register(2)"
+      tmp[2] = read_input_float_register(2)
+      $ 33 "tmp[3] = read_input_float_register(3)"
+      tmp[3] = read_input_float_register(3)
+      $ 34 "tmp[4] = read_input_float_register(4)"
+      tmp[4] = read_input_float_register(4)
+      $ 35 "tmp[5] = read_input_float_register(5)"
+      tmp[5] = read_input_float_register(5)
+      $ 36 "tmp[6] = read_input_float_register(6)"
+      tmp[6] = read_input_float_register(6)
+      $ 37 "tmp[7] = read_input_float_register(7)"
+      tmp[7] = read_input_float_register(7)
+      $ 38 "tmp[8] = read_input_float_register(8)"
+      tmp[8] = read_input_float_register(8)
+      $ 39 "tmp[9] = read_input_float_register(9)"
+      tmp[9] = read_input_float_register(9)
+      $ 40 "tmp[10] = read_input_float_register(10)"
+      tmp[10] = read_input_float_register(10)
+      $ 41 "tmp[11] = read_input_float_register(11)"
+      tmp[11] = read_input_float_register(11)
+      $ 42 "tmp[12] = read_input_float_register(12)"
+      tmp[12] = read_input_float_register(12)
+      $ 43 "tmp[13] = read_input_float_register(13)"
+      tmp[13] = read_input_float_register(13)
+      $ 44 "tmp[14] = read_input_float_register(14)"
+      tmp[14] = read_input_float_register(14)
+      $ 45 "tmp[15] = read_input_float_register(15)"
+      tmp[15] = read_input_float_register(15)
+      $ 46 "tmp[16] = read_input_float_register(16)"
+      tmp[16] = read_input_float_register(16)
+      $ 47 "tmp[17] = read_input_float_register(17)"
+      tmp[17] = read_input_float_register(17)
+      $ 48 "tmp[18] = read_input_float_register(18)"
+      tmp[18] = read_input_float_register(18)
+      $ 49 "tmp[19] = read_input_float_register(19)"
+      tmp[19] = read_input_float_register(19)
+      $ 50 "ctrl_type≔tmp[0]"
+      global ctrl_type=tmp[0]
+      $ 51 "psi_signal≔tmp[19]"
+      global psi_signal=tmp[19]
+      $ 52 "If ctrl_type ==6"
+      if (ctrl_type ==6):
+        $ 53 "wrench≔[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]]"
+        global wrench=[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]]
+        $ 54 "selection_vec≔[tmp[7],tmp[8],tmp[9],tmp[10],tmp[11],tmp[12]]"
+        global selection_vec=[tmp[7],tmp[8],tmp[9],tmp[10],tmp[11],tmp[12]]
+        $ 55 "limits≔[tmp[13],tmp[14],tmp[15],tmp[16],tmp[17],tmp[18]]"
+        global limits=[tmp[13],tmp[14],tmp[15],tmp[16],tmp[17],tmp[18]]
+      end
+      $ 56 "sync()"
+      sync()
+    end
+  end
+  threadId_Thread_1 = run Thread_1()
+  $ 57 "Thread_2"
+  thread Thread_2():
+    while (True):
+      $ 58 "Send Torque Values"
+      $ 59 "torque≔get_joint_torques()"
+      global torque=get_joint_torques()
+      $ 60 "write_output_float_register(0, torque[0])"
+      write_output_float_register(0, torque[0])
+      $ 61 "write_output_float_register(1, torque[1])"
+      write_output_float_register(1, torque[1])
+      $ 62 "write_output_float_register(2, torque[2])"
+      write_output_float_register(2, torque[2])
+      $ 63 "write_output_float_register(3, torque[3])"
+      write_output_float_register(3, torque[3])
+      $ 64 "write_output_float_register(4, torque[4])"
+      write_output_float_register(4, torque[4])
+      $ 65 "write_output_float_register(5, torque[5])"
+      write_output_float_register(5, torque[5])
+      $ 66 "write_output_boolean_register(64, is_steady())"
+      write_output_boolean_register(64, is_steady())
+      $ 67 "set_analog_out(0,psi_signal)"
+      set_analog_out(0,psi_signal)
+      $ 68 "sync()"
+      sync()
+    end
+  end
+  threadId_Thread_2 = run Thread_2()
+  while (True):
+    $ 11 "Robot Program"
+    $ 12 "If ctrl_type == 1"
+    if (ctrl_type == 1):
+      $ 13 "servoj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10],tmp[11])"
+      servoj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10],tmp[11])
+    else:
+      $ 14 "ElseIf ctrl_type == 2"
+      if (ctrl_type == 2):
+        $ 15 "speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8])"
+        speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8])
+      else:
+        $ 16 "ElseIf ctrl_type == 3"
+        if (ctrl_type == 3):
+          $ 17 "movej([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])"
+          movej([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])
+        else:
+          $ 18 "ElseIf ctrl_type == 4"
+          if (ctrl_type == 4):
+            $ 19 "movel([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])"
+            movel([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])
+          else:
+            $ 20 "ElseIf ctrl_type == 5"
+            if (ctrl_type == 5):
+              $ 21 "speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])"
+              speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])
+            else:
+              $ 22 "ElseIf ctrl_type == 6"
+              if (ctrl_type == 6):
+                $ 23 "force_mode(Base_const,selection_vec,wrench,2,limits)"
+                force_mode(p[0.0,0.0,0.0,0.0,0.0,0.0],selection_vec,wrench,2,limits)
+              else:
+                $ 24 "ElseIf ctrl_type == 7"
+                if (ctrl_type == 7):
+                  $ 25 "stopj(tmp[1])"
+                  stopj(tmp[1])
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

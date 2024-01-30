@@ -1,0 +1,13 @@
+Filesystem      Size  Used Avail Use% Mounted on
+udev             10M     0   10M   0% /dev
+tmpfs           345M  4,6M  341M   2% /run
+/dev/mmcblk1p3  1,7G  1,1G  509M  69% /
+tmpfs           863M     0  863M   0% /dev/shm
+tmpfs           5,0M     0  5,0M   0% /run/lock
+tmpfs           863M     0  863M   0% /sys/fs/cgroup
+tmpfs            32M     0   32M   0% /var/mail
+tmpfs           256M     0  256M   0% /var/tmp
+tmpfs           512M  108K  512M   1% /tmp
+/dev/mmcblk1p1   42M   11M   29M  27% /boot/grub
+/dev/mmcblk1p4  1,6G  544M  988M  36% /data
+/dev/sda1        15G  7,4G  7,1G  51% /media/urmountpoint_RUDBxm

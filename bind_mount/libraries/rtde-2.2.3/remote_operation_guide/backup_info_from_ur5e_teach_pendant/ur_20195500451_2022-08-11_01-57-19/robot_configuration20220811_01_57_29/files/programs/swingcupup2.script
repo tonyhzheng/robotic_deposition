@@ -1,0 +1,469 @@
+def swingcupup2():
+  set_tool_communication(False, 115200, 0, 1, 1.5, 3.5)
+  set_tool_output_mode(0)
+  set_tool_digital_output_mode(0, 1)
+  set_tool_digital_output_mode(1, 1)
+  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
+  set_payload(0.0)
+  set_standard_analog_input_domain(0, 1)
+  set_standard_analog_input_domain(1, 1)
+  set_tool_analog_input_domain(0, 1)
+  set_tool_analog_input_domain(1, 1)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_tool_voltage(0)
+  set_input_actions_to_default()
+  set_safety_mode_transition_hardness(1)
+  set_gravity([0.0, 0.0, 9.82])
+  # begin: URCap Installation Node
+  #   Source: Robotiq_3-Finger_Adaptive_Gripper, 1.0.0, Robotiq inc.
+  #   Type: 3F Gripper
+  # Robotiq inc.  2017
+  
+  ################################################################
+  ## urcaps for the Robotiq's 3F Gripper
+  ################################################################
+  
+  # aliases for the gripper output names
+  # those values also represent offsets
+  # in control registers
+  rACT = 1
+  rMOD = 2
+  rGTO = 8
+  rATR = 16
+  rPOS = 3
+  rFOR = 5
+  rSPE = 11
+  
+  # aliases for the gripper input names
+  # those values also represent offsets
+  # in control registers
+  gPRE = 1
+  gACT = 8
+  gMOD = 9
+  gMOD1 = 9
+  gMOD2 = 10
+  gFLT = 19
+  gFLT1 = 8
+  gFLT2 = 9
+  gFLT3 = 10
+  gFLT4 = 11
+  gGTO = 11
+  gIMC = 12
+  gIMC1 = 12
+  gIMC2 = 13
+  gSTA = 14
+  gSTA1 = 14
+  gSTA2 = 15
+  
+  #define modbus signal
+  modbus_delete_signal("gripper_O0")
+  modbus_delete_signal("gripper_O1")
+  modbus_delete_signal("gripper_O2")
+  modbus_delete_signal("gripper_I0")
+  modbus_delete_signal("gripper_I1")
+  
+  
+  modbus_add_signal("192.168.1.11",255,0,3,"gripper_O0")
+  modbus_set_signal_update_frequency("gripper_O0", 10)
+  modbus_add_signal("192.168.1.11",255,1,3,"gripper_O1")
+  modbus_set_signal_update_frequency("gripper_O1", 10)
+  modbus_add_signal("192.168.1.11",255,2,3,"gripper_O2")
+  modbus_set_signal_update_frequency("gripper_O2", 10)
+  modbus_add_signal("192.168.1.11",255,0,2,"gripper_I0")
+  modbus_set_signal_update_frequency("gripper_I0", 10)
+  modbus_add_signal("192.168.1.11",255,1,2,"gripper_I1")
+  modbus_set_signal_update_frequency("gripper_I1", 10)
+  modbus_set_runstate_dependent_choice("gripper_O0",0)
+  modbus_set_runstate_dependent_choice("gripper_O1",0)
+  modbus_set_runstate_dependent_choice("gripper_O2",0)
+  
+  
+  
+  
+  # send the activation request to the gripper.
+  def rq_activate():
+  	rq_set_var(rACT,1)
+  
+      ACT = rq_get_var(gACT)
+      while (ACT != 1):
+          ACT = rq_get_var(gACT)
+      end
+  end
+  
+  # send the activation request to the gripper and
+  # wait for its completion.
+  def rq_activate_and_wait():
+  	rq_activate()
+  
+  	while(not rq_is_gripper_activated()):
+  		# wait for activation completed
+  	end
+  end
+  def rq_act_and_wait():
+    rq_activate_and_wait()
+  end
+  
+  # interrupts the gripper motion.
+  def rq_stop():
+  	rq_set_var(rGTO,0)
+  
+      GTO = rq_get_var(gGTO)
+      while (GTO != 0):
+          GTO = rq_get_var(gGTO)
+      end
+  end
+  
+  # resets the activation and auto-release bits.
+  def rq_reset():
+  	rq_set_var(rATR,0)
+  	rq_set_var(rACT,0)
+  
+      ACT = rq_get_var(gACT)
+      while (ACT != 0):
+          ACT = rq_get_var(gACT)
+      end
+  end
+  
+  # send the auto-release request and wait
+  # for its completion
+  def rq_auto_release_and_wait():
+  	rq_set_var(rACT,1)
+  	rq_set_var(rATR,1)
+  
+      ACT = rq_get_var(gACT)
+      while (ACT != 1):
+          ACT = rq_get_var(gACT)
+      end
+  
+  	FLT = rq_get_var(gFLT)
+  	while(FLT != 15):
+  		FLT = rq_get_var(gFLT)
+  	end
+  end
+  
+  # set the force setpoint
+  def rq_set_force(force):
+  	rq_set_var(rFOR,force)
+  end
+  
+  # set the speed setpoint
+  def rq_set_speed(speed):
+  	rq_set_var(rSPE,speed)
+  end
+  
+  # send the open request to the gripper
+  def rq_open():
+  	rq_move(0)
+  end
+  
+  # send the close request to the gripper
+  def rq_close():
+  	rq_move(255)
+  end
+  
+  # send the open request to the gripper and wait
+  # for its completion
+  def rq_open_and_wait():
+  	rq_move_and_wait(0)
+  end
+  def rq_open_wait():
+  	rq_move_and_wait(0)
+  end
+  
+  # send the close request to the gripper and wait
+  # for its completion
+  def rq_close_and_wait():
+  	rq_move_and_wait(255)
+  end
+  def rq_close_wait():
+  	rq_move_and_wait(255)
+  end
+  
+  # send the move request to the position in argument
+  def rq_move(pos):
+  	rq_set_var(rGTO,0)
+  
+  	GTO = rq_get_var(gGTO)
+  	while (GTO != 0):
+  		GTO = rq_get_var(gGTO)
+  	end
+  
+  	rq_set_var(rPOS,pos)
+  
+  	PRE = rq_get_var(gPRE)
+  	while (PRE != pos):
+  		PRE = rq_get_var(gPRE)
+  	end
+  
+  	rq_set_var(rGTO,1)
+  
+  	while (GTO != 1):
+  		GTO = rq_get_var(gGTO)
+  	end
+  
+  end
+  
+  # send the move request to the position in argument
+  # and wait for its completion
+  def rq_move_and_wait(pos):
+  	rq_move(pos)
+  
+  	while (not rq_is_motion_complete()):
+  		# wait for motion completed
+  		sleep(0.01)
+  		sync()
+  	end
+  end
+  def rq_move_wait(pos):
+  	rq_move(pos)
+  
+  	while (not rq_is_motion_complete()):
+  		# wait for motion completed
+  		sleep(0.01)
+  		sync()
+  	end
+  end
+  
+  # send the request to change mode in argument
+  def rq_set_mode(value):
+  	rq_set_var(rMOD, value)
+  
+      MOD = rq_get_var(gMOD)
+      while (MOD != value):
+          MOD = rq_get_var(gMOD)
+      end
+  end
+  
+  # send the request to change to the basic mode
+  def rq_set_basic_mode():
+  	rq_set_mode(0)
+  end
+  def rq_set_basic():
+  	rq_set_mode(0)
+  end
+  
+  # send the request to change to the pinch mode
+  def rq_set_pinch_mode():
+  	rq_set_mode(1)
+  end
+  def rq_set_pinch():
+  	rq_set_mode(1)
+  end
+  
+  # send the request to change to the wide mode
+  def rq_set_wide_mode():
+  	rq_set_mode(2)
+  end
+  def rq_set_wide():
+  	rq_set_mode(2)
+  end
+  
+  # send the request to change to the scissor mode
+  def rq_set_scissor_mode():
+  	rq_set_mode(3)
+  end
+  def rq_set_scissor():
+  	rq_set_mode(3)
+  end
+  
+  # returns True if the gripper has completed its motion
+  # returns False otherwise
+  def rq_is_motion_complete():
+  	STA = rq_get_var(gSTA)
+  
+  	if (STA == 0):
+  		return False
+  	end
+  
+  	return True
+  
+  end
+  
+  # Returns True if the gripper is activated
+  def rq_is_gripper_activated():
+      IMC = rq_get_var(gIMC)
+  
+      if (IMC == 3):
+          return True
+      end
+  
+      return False
+  end
+  
+  # returns True if an object has been detected
+  def rq_is_object_detected():
+  	STA = rq_get_var(gSTA)
+  
+  	if(STA == 1):
+  		return True
+  	elif(STA == 2):
+  		return True
+  	else:
+  		return False
+  	end
+  end
+  def rq_is_obj_detec():
+  	STA = rq_get_var(gSTA)
+  
+  	if(STA == 1):
+  		return True
+  	elif(STA == 2):
+  		return True
+  	else:
+  		return False
+  	end
+  end
+  
+  # prints in the log window the fault status
+  def rq_print_fault_code():
+  	fault_status = rq_get_var(gFLT)
+  
+  	if(fault_status == 0):
+  		textmsg("Gripper Fault : ", "No Fault (0x00)")
+  	elif (fault_status == 5):
+  		textmsg("Gripper Fault : ", "Priority Fault: Action delayed, activation (reactivation) must be completed prior to renewed action (0x05)")
+  	elif (fault_status == 6):
+  		textmsg("Gripper Fault : ", "Priority Fault: Action delayed, mode change must be completed prior to continuing action (0x06)")
+  	elif (fault_status == 7):
+  		textmsg("Gripper Fault : ", "Priority Fault: The activation bit must be set prior to action (0x07)")
+  	elif (fault_status == 9):
+  		textmsg("Gripper Fault : ", "Minor Fault: The communication chip is not ready (may be booting) (0x09)")
+  	elif (fault_status == 10):
+  		textmsg("Gripper Fault : ", "Minor Fault: Changing mode fault, interference detected on Scissor (for less than 20 sec) (0x0A)")
+  	elif (fault_status == 11):
+  		textmsg("Gripper Fault : ", "Minor Fault: Automatic release in progress (0x0B)")
+  	elif (fault_status == 13):
+  		textmsg("Gripper Fault : ", "Major Fault: Activation fault, verify that no interference or other error occurred (0x0D)")
+  	elif (fault_status == 14):
+  		textmsg("Gripper Fault : ", "Major Fault: Changing mode fault, interference detected on Scissor (for more than 20 sec) (0x0E)")
+  	elif (fault_status == 15):
+  		textmsg("Gripper Fault : ", "Major Fault: Automatic release completed. Reset and activation is required (0x0F)")
+  	else:
+  		textmsg("Gripper Fault : ", "Unkwown Fault")
+  	end
+  end
+  
+  # sets the gripper inputs
+  global current_force = 0
+  global current_speed = 0
+  def rq_set_var(name, value):
+  
+  	if (name == rACT):
+          MOD = rq_get_var(gMOD)
+          GTO = rq_get_var(gGTO)
+          modbus_set_output_register("gripper_O0", 256 * (rACT * value + rMOD * MOD + rGTO * GTO), False)
+  	elif (name == rMOD):
+          ACT = rq_get_var(gACT)
+          GTO = rq_get_var(gGTO)
+          modbus_set_output_register("gripper_O0", 256 * (rACT * ACT + rMOD * value + rGTO * GTO), False)
+  	elif (name == rGTO):
+          ACT = rq_get_var(gACT)
+          MOD = rq_get_var(gMOD)
+         	modbus_set_output_register("gripper_O0", 256 * (rACT * ACT + rMOD * MOD + rGTO * value), False)
+  	elif (name == rATR):
+          ACT = rq_get_var(gACT)
+          MOD = rq_get_var(gMOD)
+          GTO = rq_get_var(gGTO)
+         	modbus_set_output_register("gripper_O0", 256 * (rACT * ACT + rMOD * MOD + rGTO * GTO + rATR * value), False)
+  	elif (name == rFOR):
+          current_force = value
+          modbus_set_output_register("gripper_O2", (256 * current_speed + value), False)
+  	elif (name == rSPE):
+          current_speed = value
+         	modbus_set_output_register("gripper_O2", (256 * value + current_force), False)
+  	elif (name == rPOS):
+          modbus_set_output_register("gripper_O1", value, False)
+      else:
+      end
+  
+      sync()
+  end
+  
+  # reads the gripper outputs
+  def rq_get_var(name, nbr_bytes=0):
+      if (name == gACT):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gACT]])
+      elif (name == gMOD):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gMOD1], reg[gMOD2]])
+      elif (name == gGTO):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gGTO]])
+      elif (name == gSTA):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gSTA1], reg[gSTA2]])
+      elif (name == gIMC):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I0", False))
+          value = binary_list_to_integer([reg[gIMC1], reg[gIMC2]])
+      elif (name == gFLT):
+          reg = integer_to_binary_list(modbus_get_signal_status("gripper_I1", False))
+          value = binary_list_to_integer([reg[gFLT1], reg[gFLT2], reg[gFLT3], reg[gFLT4]])
+      elif (name == gPRE):
+          reg = modbus_get_signal_status("gripper_I1", False)
+          value = reg % 256
+      else:
+     	    value = 0
+      end
+  
+      sync()
+  
+      return value
+  end
+  # end: URCap Installation Node
+  global Waypoint_7_p=p[.456932651635, -.232804607038, -.265945665147, 1.354061943083, -.948655727912, .955112837297]
+  global Waypoint_7_q=[0.002475738525390625, -3.2775727711119593, -1.5962953567504883, 0.3213016229816894, -5.357901202600601E-4, -0.5044234434710901]
+  global Waypoint_6_p=p[.456781608361, -.232815899324, -.261452865622, 1.354077953572, -.948722920998, .955117741537]
+  global Waypoint_6_q=[0.002463817596435547, -3.2816602192320765, -1.5887212753295898, 0.3836795526691894, -4.1610399355107575E-4, -0.5702460447894495]
+  global Waypoint_8_p=p[.456762776563, -.232824208744, -.264522418544, 1.354064086489, -.948702696170, .955083393804]
+  global Waypoint_8_q=[0.0024399757385253906, -3.2798615894713343, -1.5929746627807617, 0.34529225408520503, -4.7570863832646637E-4, -0.5294354597674769]
+  global Waypoint_9_p=p[.456791671409, -.232856490169, -.264978055311, 1.353943256606, -.948871878061, .955167315962]
+  global Waypoint_9_q=[0.0023674964904785156, -3.2792865238585414, -1.5938587188720703, 0.33826367437329097, -5.000273333948257E-4, -0.5219205061541956]
+  global Waypoint_1_p=p[.404824617149, -.232168612384, .299516242215, 1.232096127717, -1.175391291255, 1.178921164379]
+  global Waypoint_1_q=[-3.4634266988575746E-5, -1.6152383289732875, -2.270197868347168, -1.047184781437256, -7.931386129200746E-6, 0.17624568939208984]
+  global Waypoint_2_p=p[.775079215562, -.233354232621, .376756785524, 1.223973916939, -1.179901081551, 1.185607142248]
+  global Waypoint_2_q=[9.5367431640625E-7, -2.3618790111937464, -1.0609731674194336, -1.047184781437256, 5.14984130859375E-5, -0.27777272859682256]
+  global Waypoint_3_p=p[.340960702179, -.231996472248, .451011022438, 1.258225340571, -1.129603638657, 1.135139968777]
+  global Waypoint_3_q=[9.5367431640625E-7, -1.270484284763672, -2.221123695373535, -1.047208623295166, 5.14984130859375E-5, -0.2777488867389124]
+  global Waypoint_4_p=p[.702088128955, -.233080096675, .582479135275, 1.211891532192, -1.197713665615, 1.203095340659]
+  global Waypoint_4_q=[9.5367431640625E-7, -2.130129953423971, -0.9911699295043945, -1.047196702366211, 3.9577484130859375E-5, -0.5551822821246546]
+  global Waypoint_5_p=p[.394951528131, -.232548869440, .796156437045, 1.246811207789, -1.142027011202, 1.146490176236]
+  global Waypoint_5_q=[3.719329833984375E-5, -1.4835217756083985, -1.309016227722168, -1.047208623295166, 2.765655517578125E-5, -0.9599216620074671]
+  $ 1 "Robot Program"
+  $ 2 "MoveJ"
+  $ 3 "Waypoint_7"
+  movej(get_inverse_kin(Waypoint_7_p, qnear=Waypoint_7_q), t=2.0)
+  $ 4 "Waypoint_6"
+  movej(get_inverse_kin(Waypoint_6_p, qnear=Waypoint_6_q), t=2.0)
+  $ 5 "Waypoint_7"
+  movej(get_inverse_kin(Waypoint_7_p, qnear=Waypoint_7_q), t=2.0)
+  $ 6 "Waypoint_6"
+  movej(get_inverse_kin(Waypoint_6_p, qnear=Waypoint_6_q), t=2.0)
+  $ 7 "Waypoint_8"
+  movej(get_inverse_kin(Waypoint_8_p, qnear=Waypoint_8_q), t=3.0)
+  $ 8 "Waypoint_6"
+  movej(get_inverse_kin(Waypoint_6_p, qnear=Waypoint_6_q), t=2.0)
+  $ 9 "Waypoint_9"
+  movej(get_inverse_kin(Waypoint_9_p, qnear=Waypoint_9_q), t=3.0)
+  $ 10 "Waypoint_6"
+  movej(get_inverse_kin(Waypoint_6_p, qnear=Waypoint_6_q), t=2.0)
+  $ 11 "Wait: 3.0"
+  sleep(3.0)
+  $ 12 "Waypoint_1"
+  movej(get_inverse_kin(Waypoint_1_p, qnear=Waypoint_1_q), t=5.0)
+  $ 13 "Wait: 2.0"
+  sleep(2.0)
+  $ 14 "Waypoint_2"
+  movej(get_inverse_kin(Waypoint_2_p, qnear=Waypoint_2_q), t=0.5)
+  $ 15 "Wait: 0.3"
+  sleep(0.3)
+  $ 16 "Waypoint_3"
+  movej(get_inverse_kin(Waypoint_3_p, qnear=Waypoint_3_q), t=0.5)
+  $ 17 "Wait: 0.2"
+  sleep(0.2)
+  $ 18 "Waypoint_4"
+  movej(get_inverse_kin(Waypoint_4_p, qnear=Waypoint_4_q), t=0.43)
+  $ 19 "Waypoint_5"
+  movej(get_inverse_kin(Waypoint_5_p, qnear=Waypoint_5_q), t=0.41)
+end

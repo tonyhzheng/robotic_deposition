@@ -1,0 +1,202 @@
+def rtde_control_loop_bioprint():
+  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
+  set_payload(0.2)
+  set_safety_mode_transition_hardness(1)
+  set_tool_communication(False, 115200, 0, 1, 1.5, 3.5)
+  set_tool_output_mode(0)
+  set_tool_digital_output_mode(0, 1)
+  set_tool_digital_output_mode(1, 1)
+  set_tool_voltage(0)
+  set_gravity([0.0, 0.0, 9.82])
+  step_count_6cffd8ae_cf0d_41b1_85a9_e3a3b6d9e950 = 0.0
+  thread Step_Counter_Thread_b7f1e924_87a4_4847_bbb1_fecb8f908905():
+    while (True):
+      step_count_6cffd8ae_cf0d_41b1_85a9_e3a3b6d9e950 = step_count_6cffd8ae_cf0d_41b1_85a9_e3a3b6d9e950 + 1.0
+      sync()
+    end
+  end
+  run Step_Counter_Thread_b7f1e924_87a4_4847_bbb1_fecb8f908905()
+  set_standard_analog_input_domain(0, 1)
+  set_standard_analog_input_domain(1, 1)
+  set_tool_analog_input_domain(0, 1)
+  set_tool_analog_input_domain(1, 1)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_input_actions_to_default()
+  $ 1 "BeforeStart"
+  $ 2 "set_analog_outputdomain(0,0)"
+  set_analog_outputdomain(0,0)
+  $ 3 "ctrl_type≔0"
+  global ctrl_type=0
+  $ 4 "psi_signal≔0"
+  global psi_signal=0
+  $ 5 "selection_vec≔[0,0,0,0,0,0]"
+  global selection_vec=[0,0,0,0,0,0]
+  $ 6 "wrench≔[0,0,0,0,0,0]"
+  global wrench=[0,0,0,0,0,0]
+  $ 7 "limits≔[0,0,0,0,0,0]"
+  global limits=[0,0,0,0,0,0]
+  $ 8 "tmp≔[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"
+  global tmp=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  $ 9 "rtde_set_watchdog('input_int_register_0', 0.5, 'STOP')"
+  rtde_set_watchdog("input_int_register_0", 0.5, "STOP")
+  $ 10 "zero_ftsensor()"
+  zero_ftsensor()
+  $ 36 "Thread_1"
+  thread Thread_1():
+    while (True):
+      $ 37 "Read remote registers"
+      $ 38 "tmp≔[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"
+      global tmp=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      $ 39 "tmp[0] = read_input_float_register(0)"
+      tmp[0] = read_input_float_register(0)
+      $ 40 "tmp[1] = read_input_float_register(1)"
+      tmp[1] = read_input_float_register(1)
+      $ 41 "tmp[2] = read_input_float_register(2)"
+      tmp[2] = read_input_float_register(2)
+      $ 42 "tmp[3] = read_input_float_register(3)"
+      tmp[3] = read_input_float_register(3)
+      $ 43 "tmp[4] = read_input_float_register(4)"
+      tmp[4] = read_input_float_register(4)
+      $ 44 "tmp[5] = read_input_float_register(5)"
+      tmp[5] = read_input_float_register(5)
+      $ 45 "tmp[6] = read_input_float_register(6)"
+      tmp[6] = read_input_float_register(6)
+      $ 46 "tmp[7] = read_input_float_register(7)"
+      tmp[7] = read_input_float_register(7)
+      $ 47 "tmp[8] = read_input_float_register(8)"
+      tmp[8] = read_input_float_register(8)
+      $ 48 "tmp[9] = read_input_float_register(9)"
+      tmp[9] = read_input_float_register(9)
+      $ 49 "tmp[10] = read_input_float_register(10)"
+      tmp[10] = read_input_float_register(10)
+      $ 50 "tmp[11] = read_input_float_register(11)"
+      tmp[11] = read_input_float_register(11)
+      $ 51 "tmp[12] = read_input_float_register(12)"
+      tmp[12] = read_input_float_register(12)
+      $ 52 "tmp[13] = read_input_float_register(13)"
+      tmp[13] = read_input_float_register(13)
+      $ 53 "tmp[14] = read_input_float_register(14)"
+      tmp[14] = read_input_float_register(14)
+      $ 54 "tmp[15] = read_input_float_register(15)"
+      tmp[15] = read_input_float_register(15)
+      $ 55 "tmp[16] = read_input_float_register(16)"
+      tmp[16] = read_input_float_register(16)
+      $ 56 "tmp[17] = read_input_float_register(17)"
+      tmp[17] = read_input_float_register(17)
+      $ 57 "tmp[18] = read_input_float_register(18)"
+      tmp[18] = read_input_float_register(18)
+      $ 58 "tmp[19] = read_input_float_register(19)"
+      tmp[19] = read_input_float_register(19)
+      $ 59 "ctrl_type≔tmp[0]"
+      global ctrl_type=tmp[0]
+      $ 60 "psi_signal≔tmp[19]"
+      global psi_signal=tmp[19]
+      $ 61 "If ctrl_type ==6"
+      if (ctrl_type ==6):
+        $ 62 "wrench≔[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]]"
+        global wrench=[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]]
+        $ 63 "selection_vec≔[tmp[7],tmp[8],tmp[9],tmp[10],tmp[11],tmp[12]]"
+        global selection_vec=[tmp[7],tmp[8],tmp[9],tmp[10],tmp[11],tmp[12]]
+        $ 64 "limits≔[tmp[13],tmp[14],tmp[15],tmp[16],tmp[17],tmp[18]]"
+        global limits=[tmp[13],tmp[14],tmp[15],tmp[16],tmp[17],tmp[18]]
+      end
+      $ 65 "sync()"
+      sync()
+    end
+  end
+  threadId_Thread_1 = run Thread_1()
+  $ 66 "Thread_2"
+  thread Thread_2():
+    while (True):
+      $ 67 "Send Torque Values"
+      $ 68 "torque≔get_joint_torques()"
+      global torque=get_joint_torques()
+      $ 69 "write_output_float_register(0, torque[0])"
+      write_output_float_register(0, torque[0])
+      $ 70 "write_output_float_register(1, torque[1])"
+      write_output_float_register(1, torque[1])
+      $ 71 "write_output_float_register(2, torque[2])"
+      write_output_float_register(2, torque[2])
+      $ 72 "write_output_float_register(3, torque[3])"
+      write_output_float_register(3, torque[3])
+      $ 73 "write_output_float_register(4, torque[4])"
+      write_output_float_register(4, torque[4])
+      $ 74 "write_output_float_register(5, torque[5])"
+      write_output_float_register(5, torque[5])
+      $ 75 "write_output_boolean_register(64, is_steady())"
+      write_output_boolean_register(64, is_steady())
+      $ 76 "set_analog_out(0,psi_signal)"
+      set_analog_out(0,psi_signal)
+      $ 77 "q≔get_actual_joint_positions()"
+      global q= get_actual_joint_positions ()
+      $ 78 "tcp≔get_actual_tcp_pose()"
+      global tcp= get_actual_tcp_pose ()
+      $ 79 "sync()"
+      sync()
+    end
+  end
+  threadId_Thread_2 = run Thread_2()
+  while (True):
+    $ 11 "Robot Program"
+    $ 12 "If ctrl_type == 1"
+    if (ctrl_type == 1):
+      $ 13 "servoj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10],tmp[11])"
+      servoj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10],tmp[11])
+    else:
+      $ 14 "ElseIf ctrl_type == 2"
+      if (ctrl_type == 2):
+        $ 16 "If tmp[8]==0"
+        if (tmp[8]==0):
+          $ 17 "speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7])"
+          speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7])
+        else:
+          $ 18 "Else" "noBreak"
+          $ 19 "speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8])"
+          speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8])
+        end
+      else:
+        $ 20 "ElseIf ctrl_type == 3"
+        if (ctrl_type == 3):
+          $ 21 "movej([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])"
+          movej([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])
+        else:
+          $ 22 "ElseIf ctrl_type == 4"
+          if (ctrl_type == 4):
+            $ 23 "movel(p[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])"
+            movel(p[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])
+          else:
+            $ 24 "ElseIf ctrl_type == 5"
+            if (ctrl_type == 5):
+              $ 25 "speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])"
+              speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])
+              $ 26 "If tmp[8]==0"
+              if (tmp[8]==0):
+                $ 27 "speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],aRot=tmp[9])"
+                speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],aRot=tmp[9])
+              else:
+                $ 28 "Else" "noBreak"
+                $ 29 "speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])"
+                speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])
+              end
+            else:
+              $ 30 "ElseIf ctrl_type == 6"
+              if (ctrl_type == 6):
+                $ 31 "force_mode(Base_const,selection_vec,wrench,2,limits)"
+                force_mode(p[0.0,0.0,0.0,0.0,0.0,0.0],selection_vec,wrench,2,limits)
+              else:
+                $ 32 "ElseIf ctrl_type == 7"
+                if (ctrl_type == 7):
+                  $ 33 "stopj(tmp[1])"
+                  stopj(tmp[1])
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    $ 35 "args≔[tmp[7],tmp[8],tmp[9],tmp[10],tmp[1]]"
+    global args=[tmp[7],tmp[8],tmp[9],tmp[10],tmp[1]]
+  end
+end

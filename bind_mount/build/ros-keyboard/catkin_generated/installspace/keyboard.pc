@@ -1,0 +1,8 @@
+prefix=/home/docker/bind_mount/install
+
+Name: keyboard
+Description: Description of keyboard
+Version: 0.1.1
+Cflags: -I${prefix}/include -I/usr/include/SDL
+Libs: -L${prefix}/lib /usr/lib/x86_64-linux-gnu/libSDLmain.a /usr/lib/x86_64-linux-gnu/libSDL.so -lpthread
+Requires: roscpp std_msgs message_runtime

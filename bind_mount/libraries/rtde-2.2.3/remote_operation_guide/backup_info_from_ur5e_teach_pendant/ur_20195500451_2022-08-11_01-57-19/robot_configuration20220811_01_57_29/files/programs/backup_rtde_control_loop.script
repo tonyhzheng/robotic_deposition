@@ -1,0 +1,98 @@
+def backup_rtde_control_loop():
+  set_gravity([0.0, 0.0, 9.82])
+  set_tool_communication(False, 115200, 0, 1, 1.5, 3.5)
+  set_tool_output_mode(0)
+  set_tool_digital_output_mode(0, 1)
+  set_tool_digital_output_mode(1, 1)
+  set_tool_voltage(0)
+  set_standard_analog_input_domain(0, 1)
+  set_standard_analog_input_domain(1, 1)
+  set_tool_analog_input_domain(0, 1)
+  set_tool_analog_input_domain(1, 1)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_input_actions_to_default()
+  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
+  set_payload(0.2)
+  set_safety_mode_transition_hardness(1)
+  $ 1 "BeforeStart"
+  $ 2 "setp≔p[0,0,0,0,0,0]"
+  global setp=p[0,0,0,0,0,0]
+  $ 3 "setj≔[0,0,0,0,0,0]"
+  global setj=[0,0,0,0,0,0]
+  $ 4 "moving≔0"
+  global moving=0
+  $ 5 "blocking≔0.008"
+  global blocking=0.008
+  $ 6 "lookahead≔0.03"
+  global lookahead=0.03
+  $ 7 "gain≔500"
+  global gain=500
+  $ 8 "maxPosError≔0.01"
+  global maxPosError=0.01
+  $ 9 "maxOrientError≔0.01"
+  global maxOrientError=0.01
+  $ 10 "Set"
+  set_payload_mass(0.2)
+  $ 19 "Thread_1"
+  thread Thread_1():
+    while (True):
+      global setj=[0,0,0,0,0,0]
+      global setp=p[0,0,0,0,0,0]
+      global moving=0
+      global blocking=0.008
+      global lookahead=0.03
+      global gain=500
+      global maxPosError=0.01
+      global maxOrientError=0.01
+      while (True):
+        global tmp=[0,0,0,0,0,0,0,0,0,0,0,0]
+        tmp[0] = read_input_float_register(0)
+        tmp[1] = read_input_float_register(1)
+        tmp[2] = read_input_float_register(2)
+        tmp[3] = read_input_float_register(3)
+        tmp[4] = read_input_float_register(4)
+        tmp[5] = read_input_float_register(5)
+        tmp[6] = read_input_float_register(6)
+        tmp[7] = read_input_float_register(7)
+        tmp[8] = read_input_float_register(8)
+        tmp[9] = read_input_float_register(9)
+        if (tmp != [0,0,0,0,0,0,0,0,0,0,0,0]):
+          global moving=tmp[6]
+          global blocking=tmp[7]
+          global lookahead=tmp[8]
+          global gain=tmp[9]
+          global maxPosError=tmp[10]
+          global maxOrientError=tmp[11]
+          if (moving == 1):
+            global setj=[tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]]
+          else:
+            if (moving == 2):
+              global setp=p[tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]]
+            end
+          end
+        end
+        sync()
+      end
+    end
+  end
+  threadId_Thread_1 = run Thread_1()
+  while (True):
+    $ 12 "Robot Program"
+    $ 13 "write_output_integer_register(0, 0)"
+    write_output_integer_register(0, 0)
+    $ 14 "If moving == 1"
+    if (moving == 1):
+      $ 15 "servoj(setj,0,0,blocking,lookahead,gain)"
+      servoj(setj,0,0,blocking,lookahead,gain)
+    else:
+      $ 16 "ElseIf moving == 2"
+      if (moving == 2):
+        $ 17 "servoj(get_inverse_kin(setp,maxPositionError=maxPosError,maxOrientationError=maxOrientError),0,0,blocking,lookahead,gain)"
+        servoj( get_inverse_kin (setp,maxPositionError=maxPosError,maxOrientationError=maxOrientError),0,0,blocking,lookahead,gain)
+      end
+    end
+    $ 18 "sync()"
+    sync()
+  end
+end

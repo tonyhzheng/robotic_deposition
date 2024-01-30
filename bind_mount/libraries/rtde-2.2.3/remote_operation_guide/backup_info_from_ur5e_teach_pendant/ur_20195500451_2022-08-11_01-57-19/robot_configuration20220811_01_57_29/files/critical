@@ -1,0 +1,362 @@
+Jul  5 19:36:19 ur-20195500451 kernel: mmc1: tuning execution failed: -5
+Jul  5 19:36:19 ur-20195500451 kernel: mmc1: Unexpected interrupt 0x04000000.
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Sys addr: 0x351fa200 | Version:  0x0000b502
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: Host ctl2: 0x0000000c
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x351fa200
+Jul  5 19:36:19 ur-20195500451 kernel: sdhci: ===========================================
+Jul  5 19:36:19 ur-20195500451 kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Jul  5 19:37:02 ur-20195500451 runit: URControl stopped with exit code: -1
+Jul  5 19:37:02 ur-20195500451 runit: URControl stopped with exit code: -1
+Jul  6 20:28:52 localhost kernel: mmc1: tuning execution failed: -5
+Jul  6 20:28:52 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Jul  6 20:28:52 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Jul  6 20:28:52 localhost kernel: sdhci: Sys addr: 0x37307200 | Version:  0x0000b502
+Jul  6 20:28:52 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Jul  6 20:28:52 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Jul  6 20:28:52 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Jul  6 20:28:52 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Jul  6 20:28:52 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Jul  6 20:28:52 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Jul  6 20:28:52 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Jul  6 20:28:52 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Jul  6 20:28:52 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Jul  6 20:28:52 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Jul  6 20:28:52 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Jul  6 20:28:52 localhost kernel: sdhci: ADMA Err: 0x00000003 | ADMA Ptr: 0x37307200
+Jul  6 20:28:52 localhost kernel: sdhci: ===========================================
+Jul  6 20:28:52 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Jul 11 19:23:40 localhost kernel: mmc1: tuning execution failed: -5
+Jul 11 19:23:40 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Jul 11 19:23:40 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Jul 11 19:23:40 localhost kernel: sdhci: Sys addr: 0x370e7200 | Version:  0x0000b502
+Jul 11 19:23:40 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Jul 11 19:23:40 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Jul 11 19:23:40 localhost kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Jul 11 19:23:40 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Jul 11 19:23:40 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Jul 11 19:23:40 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Jul 11 19:23:40 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Jul 11 19:23:40 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Jul 11 19:23:40 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Jul 11 19:23:40 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Jul 11 19:23:40 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Jul 11 19:23:40 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x370e7200
+Jul 11 19:23:40 localhost kernel: sdhci: ===========================================
+Jul 11 19:23:40 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Jul 14 21:55:05 localhost kernel: mmc1: tuning execution failed: -5
+Jul 14 21:55:05 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Jul 14 21:55:05 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Jul 14 21:55:05 localhost kernel: sdhci: Sys addr: 0x37005200 | Version:  0x0000b502
+Jul 14 21:55:05 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Jul 14 21:55:05 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Jul 14 21:55:05 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Jul 14 21:55:05 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Jul 14 21:55:05 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Jul 14 21:55:05 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Jul 14 21:55:05 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Jul 14 21:55:05 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Jul 14 21:55:05 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Jul 14 21:55:05 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Jul 14 21:55:05 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Jul 14 21:55:05 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x37005200
+Jul 14 21:55:05 localhost kernel: sdhci: ===========================================
+Jul 14 21:55:05 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Jul 25 04:19:19 localhost kernel: mmc1: tuning execution failed: -5
+Jul 25 04:19:19 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Jul 25 04:19:19 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Jul 25 04:19:19 localhost kernel: sdhci: Sys addr: 0x359cf200 | Version:  0x0000b502
+Jul 25 04:19:19 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Jul 25 04:19:19 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Jul 25 04:19:19 localhost kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Jul 25 04:19:19 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Jul 25 04:19:19 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Jul 25 04:19:19 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Jul 25 04:19:19 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Jul 25 04:19:19 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Jul 25 04:19:19 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Jul 25 04:19:19 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Jul 25 04:19:19 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Jul 25 04:19:19 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x359cf200
+Jul 25 04:19:19 localhost kernel: sdhci: ===========================================
+Jul 25 04:19:19 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  1 19:28:04 localhost kernel: mmc1: tuning execution failed: -5
+Aug  1 19:28:04 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  1 19:28:04 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  1 19:28:04 localhost kernel: sdhci: Sys addr: 0x37211200 | Version:  0x0000b502
+Aug  1 19:28:04 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  1 19:28:04 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  1 19:28:04 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Aug  1 19:28:04 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  1 19:28:04 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  1 19:28:04 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Aug  1 19:28:04 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  1 19:28:04 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Aug  1 19:28:04 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  1 19:28:04 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  1 19:28:04 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  1 19:28:04 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x37211200
+Aug  1 19:28:04 localhost kernel: sdhci: ===========================================
+Aug  1 19:28:04 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  3 01:29:21 localhost kernel: mmc1: tuning execution failed: -5
+Aug  3 01:29:21 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  3 01:29:21 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  3 01:29:21 localhost kernel: sdhci: Sys addr: 0x37243200 | Version:  0x0000b502
+Aug  3 01:29:21 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  3 01:29:21 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  3 01:29:21 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Aug  3 01:29:21 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  3 01:29:21 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  3 01:29:21 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Aug  3 01:29:21 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  3 01:29:21 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Aug  3 01:29:21 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  3 01:29:21 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  3 01:29:21 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  3 01:29:21 localhost kernel: sdhci: ADMA Err: 0x00000003 | ADMA Ptr: 0x37243200
+Aug  3 01:29:21 localhost kernel: sdhci: ===========================================
+Aug  3 01:29:21 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  3 01:36:12 localhost kernel: mmc1: tuning execution failed: -5
+Aug  3 01:36:12 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  3 01:36:12 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  3 01:36:12 localhost kernel: sdhci: Sys addr: 0x372a3200 | Version:  0x0000b502
+Aug  3 01:36:12 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  3 01:36:12 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  3 01:36:12 localhost kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Aug  3 01:36:12 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  3 01:36:12 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  3 01:36:12 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Aug  3 01:36:12 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  3 01:36:12 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Aug  3 01:36:12 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  3 01:36:12 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  3 01:36:12 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  3 01:36:12 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x372a3200
+Aug  3 01:36:12 localhost kernel: sdhci: ===========================================
+Aug  3 01:36:12 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  3 19:07:10 localhost kernel: mmc1: tuning execution failed: -5
+Aug  3 19:07:10 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  3 19:07:10 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  3 19:07:10 localhost kernel: sdhci: Sys addr: 0x37250200 | Version:  0x0000b502
+Aug  3 19:07:10 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  3 19:07:10 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  3 19:07:10 localhost kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Aug  3 19:07:10 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  3 19:07:10 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  3 19:07:10 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Aug  3 19:07:10 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  3 19:07:10 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Aug  3 19:07:10 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  3 19:07:10 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  3 19:07:10 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  3 19:07:10 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x37250200
+Aug  3 19:07:10 localhost kernel: sdhci: ===========================================
+Aug  3 19:07:10 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  3 19:17:36 localhost kernel: mmc1: tuning execution failed: -5
+Aug  3 19:17:36 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  3 19:17:36 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  3 19:17:36 localhost kernel: sdhci: Sys addr: 0x372ce200 | Version:  0x0000b502
+Aug  3 19:17:36 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  3 19:17:36 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  3 19:17:36 localhost kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Aug  3 19:17:36 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  3 19:17:36 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  3 19:17:36 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Aug  3 19:17:36 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  3 19:17:36 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Aug  3 19:17:36 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  3 19:17:36 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  3 19:17:36 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  3 19:17:36 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x372ce200
+Aug  3 19:17:36 localhost kernel: sdhci: ===========================================
+Aug  3 19:17:36 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  3 21:08:04 localhost kernel: mmc1: tuning execution failed: -5
+Aug  3 21:08:04 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  3 21:08:04 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  3 21:08:04 localhost kernel: sdhci: Sys addr: 0x371fc200 | Version:  0x0000b502
+Aug  3 21:08:04 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  3 21:08:04 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  3 21:08:04 localhost kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Aug  3 21:08:04 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  3 21:08:04 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  3 21:08:04 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Aug  3 21:08:04 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  3 21:08:04 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Aug  3 21:08:04 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  3 21:08:04 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  3 21:08:04 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  3 21:08:04 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x371fc200
+Aug  3 21:08:04 localhost kernel: sdhci: ===========================================
+Aug  3 21:08:04 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  6 21:09:23 localhost kernel: mmc1: tuning execution failed: -5
+Aug  6 21:09:23 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  6 21:09:23 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  6 21:09:23 localhost kernel: sdhci: Sys addr: 0x3724b200 | Version:  0x0000b502
+Aug  6 21:09:23 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  6 21:09:23 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  6 21:09:23 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Aug  6 21:09:23 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  6 21:09:23 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  6 21:09:23 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Aug  6 21:09:23 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  6 21:09:23 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Aug  6 21:09:23 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  6 21:09:23 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  6 21:09:23 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  6 21:09:23 localhost kernel: sdhci: ADMA Err: 0x00000003 | ADMA Ptr: 0x3724b200
+Aug  6 21:09:23 localhost kernel: sdhci: ===========================================
+Aug  6 21:09:23 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  7 23:28:27 localhost kernel: mmc1: tuning execution failed: -5
+Aug  7 23:28:27 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  7 23:28:27 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  7 23:28:27 localhost kernel: sdhci: Sys addr: 0x372b6200 | Version:  0x0000b502
+Aug  7 23:28:27 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  7 23:28:27 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  7 23:28:27 localhost kernel: sdhci: Present:  0x01ff0000 | Host ctl: 0x00000017
+Aug  7 23:28:27 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  7 23:28:27 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  7 23:28:27 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000002
+Aug  7 23:28:27 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  7 23:28:27 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000001
+Aug  7 23:28:27 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  7 23:28:27 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  7 23:28:27 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  7 23:28:27 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x372b6200
+Aug  7 23:28:27 localhost kernel: sdhci: ===========================================
+Aug  7 23:28:27 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug  8 17:41:55 localhost kernel: mmc1: tuning execution failed: -5
+Aug  8 17:41:55 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug  8 17:41:55 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug  8 17:41:55 localhost kernel: sdhci: Sys addr: 0x3722f200 | Version:  0x0000b502
+Aug  8 17:41:55 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug  8 17:41:55 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug  8 17:41:55 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Aug  8 17:41:55 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug  8 17:41:55 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug  8 17:41:55 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Aug  8 17:41:55 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug  8 17:41:55 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Aug  8 17:41:55 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug  8 17:41:55 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug  8 17:41:55 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug  8 17:41:55 localhost kernel: sdhci: ADMA Err: 0x00000003 | ADMA Ptr: 0x3722f200
+Aug  8 17:41:55 localhost kernel: sdhci: ===========================================
+Aug  8 17:41:55 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug 10 20:02:52 localhost kernel: mmc1: tuning execution failed: -5
+Aug 10 20:02:52 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug 10 20:02:52 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug 10 20:02:52 localhost kernel: sdhci: Sys addr: 0x35250200 | Version:  0x0000b502
+Aug 10 20:02:52 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug 10 20:02:52 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug 10 20:02:52 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Aug 10 20:02:52 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug 10 20:02:52 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug 10 20:02:52 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Aug 10 20:02:52 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug 10 20:02:52 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Aug 10 20:02:52 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug 10 20:02:52 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug 10 20:02:52 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug 10 20:02:52 localhost kernel: sdhci: ADMA Err: 0x00000000 | ADMA Ptr: 0x35250200
+Aug 10 20:02:52 localhost kernel: sdhci: ===========================================
+Aug 10 20:02:52 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug 11 01:46:23 localhost kernel: mmc1: tuning execution failed: -5
+Aug 11 01:46:23 localhost kernel: mmc1: Unexpected interrupt 0x04000000.
+Aug 11 01:46:23 localhost kernel: sdhci: =========== REGISTER DUMP (mmc1)===========
+Aug 11 01:46:23 localhost kernel: sdhci: Sys addr: 0x351f7200 | Version:  0x0000b502
+Aug 11 01:46:23 localhost kernel: sdhci: Blk size: 0x00007200 | Blk cnt:  0x00000008
+Aug 11 01:46:23 localhost kernel: sdhci: Argument: 0x00000000 | Trn mode: 0x0000003b
+Aug 11 01:46:23 localhost kernel: sdhci: Present:  0x01ff0206 | Host ctl: 0x00000017
+Aug 11 01:46:23 localhost kernel: sdhci: Power:    0x0000000f | Blk gap:  0x00000000
+Aug 11 01:46:23 localhost kernel: sdhci: Wake-up:  0x00000000 | Clock:    0x00000107
+Aug 11 01:46:23 localhost kernel: sdhci: Timeout:  0x0000000a | Int stat: 0x00000000
+Aug 11 01:46:23 localhost kernel: sdhci: Int enab: 0x02ff008b | Sig enab: 0x02ff008b
+Aug 11 01:46:23 localhost kernel: sdhci: AC12 err: 0x00000000 | Slot int: 0x00000000
+Aug 11 01:46:23 localhost kernel: sdhci: Caps:     0x076864b2 | Caps_1:   0x00000004
+Aug 11 01:46:23 localhost kernel: sdhci: Cmd:      0x0000123a | Max curr: 0x00000000
+Aug 11 01:46:23 localhost kernel: sdhci: Host ctl2: 0x0000000c
+Aug 11 01:46:23 localhost kernel: sdhci: ADMA Err: 0x00000003 | ADMA Ptr: 0x351f7200
+Aug 11 01:46:23 localhost kernel: sdhci: ===========================================
+Aug 11 01:46:23 localhost kernel: hid-generic 0003:7374:1278.0002: device has no listeners, quitting
+Aug 11 01:51:21 localhost kernel: blk_update_request: I/O error, dev sda, sector 15472425
+Aug 11 01:51:21 localhost kernel: Buffer I/O error on dev sda1, logical block 15464361, lost sync page write
+Aug 11 01:51:21 localhost kernel: blk_update_request: I/O error, dev sda, sector 15472426
+Aug 11 01:51:21 localhost kernel: Buffer I/O error on dev sda1, logical block 15464362, lost sync page write
+Aug 11 01:51:21 localhost kernel: Buffer I/O error on dev sda1, logical block 15464363, lost sync page write
+Aug 11 01:51:21 localhost kernel: Buffer I/O error on dev sda1, logical block 15464364, lost sync page write
+Aug 11 01:51:21 localhost kernel: Buffer I/O error on dev sda1, logical block 15464365, lost sync page write
+Aug 11 01:51:21 localhost kernel: Buffer I/O error on dev sda1, logical block 15464366, lost sync page write
+Aug 11 01:51:21 localhost kernel: Buffer I/O error on dev sda1, logical block 15464367, lost sync page write
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): bread failed in fat_clusters_flush
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464320) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464321) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464322) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464323) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464324) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464325) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464326) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464327) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464328) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): Directory bread(block 15464329) failed
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): FAT read failed (blocknr 5381)
+Aug 11 01:51:21 localhost kernel: FAT-fs (sda1): bread failed in fat_clusters_flush

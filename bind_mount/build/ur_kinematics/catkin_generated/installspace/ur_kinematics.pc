@@ -1,0 +1,8 @@
+prefix=/home/docker/bind_mount/install
+
+Name: ur_kinematics
+Description: Description of ur_kinematics
+Version: 1.2.1
+Cflags: -I${prefix}/include -I/usr/include
+Libs: -L${prefix}/lib -lur3_kin -lur5_kin -lur10_kin /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+Requires: roscpp geometry_msgs pluginlib tf_conversions

@@ -1,0 +1,80 @@
+ Program
+   BeforeStart
+     set_analog_outputdomain(0,0)
+     ctrl_type≔0
+     psi_signal≔0
+     selection_vec≔[0,0,0,0,0,0]
+     wrench≔[0,0,0,0,0,0]
+     limits≔[0,0,0,0,0,0]
+     tmp≔[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+     rtde_set_watchdog("input_int_register_0", 0.5, "STOP")
+     zero_ftsensor()
+   Robot Program
+     If ctrl_type == 1
+       servoj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10],tmp[11])
+     ElseIf ctrl_type == 2
+       'speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8])'
+       If tmp[8]==0
+         speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7])
+       Else
+         speedj([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8])
+     ElseIf ctrl_type == 3
+       movej([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])
+     ElseIf ctrl_type == 4
+       movel(p[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9],tmp[10])
+     ElseIf ctrl_type == 5
+       speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])
+       If tmp[8]==0
+         speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],aRot=tmp[9])
+       Else
+         speedl([tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]],tmp[7],tmp[8],tmp[9])
+     ElseIf ctrl_type == 6
+       force_mode(Base_const,selection_vec,wrench,2,limits)
+     ElseIf ctrl_type == 7
+       stopj(tmp[1])
+     'sync()'
+     args≔[tmp[7],tmp[8],tmp[9],tmp[10],tmp[1]]
+   Thread_1
+     Read remote registers
+       tmp≔[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+       tmp[0] = read_input_float_register(0)
+       tmp[1] = read_input_float_register(1)
+       tmp[2] = read_input_float_register(2)
+       tmp[3] = read_input_float_register(3)
+       tmp[4] = read_input_float_register(4)
+       tmp[5] = read_input_float_register(5)
+       tmp[6] = read_input_float_register(6)
+       tmp[7] = read_input_float_register(7)
+       tmp[8] = read_input_float_register(8)
+       tmp[9] = read_input_float_register(9)
+       tmp[10] = read_input_float_register(10)
+       tmp[11] = read_input_float_register(11)
+       tmp[12] = read_input_float_register(12)
+       tmp[13] = read_input_float_register(13)
+       tmp[14] = read_input_float_register(14)
+       tmp[15] = read_input_float_register(15)
+       tmp[16] = read_input_float_register(16)
+       tmp[17] = read_input_float_register(17)
+       tmp[18] = read_input_float_register(18)
+       tmp[19] = read_input_float_register(19)
+       ctrl_type≔tmp[0]
+       psi_signal≔tmp[19]
+       If ctrl_type ==6
+         wrench≔[tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6]]
+         selection_vec≔[tmp[7],tmp[8],tmp[9],tmp[10],tmp[11],tmp[12]]
+         limits≔[tmp[13],tmp[14],tmp[15],tmp[16],tmp[17],tmp[18]]
+     sync()
+   Thread_2
+     Send Torque Values
+       torque≔get_joint_torques()
+       write_output_float_register(0, torque[0])
+       write_output_float_register(1, torque[1])
+       write_output_float_register(2, torque[2])
+       write_output_float_register(3, torque[3])
+       write_output_float_register(4, torque[4])
+       write_output_float_register(5, torque[5])
+       write_output_boolean_register(64, is_steady())
+       set_analog_out(0,psi_signal)
+       q≔get_actual_joint_positions()
+       tcp≔get_actual_tcp_pose()
+       sync()
