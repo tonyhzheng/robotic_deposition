@@ -12,12 +12,15 @@ The 3D printing of biphasic materials can be difficult due to the non-homogeneit
 This repository will allow you to simulate a UR5e robot arm and command it to extrude a desired shape given by g-code.  
 
 UR5e Simulator from Universal Robotics
+
 ![](https://github.com/tonyhzheng/robotic_deposition/blob/main/assets/ur5e_sim.gif)
 
 GUI for visualizing the data from the robot arm
+
 ![](https://github.com/tonyhzheng/robotic_deposition/blob/main/assets/dearpygui.gif)
 
 Live plot of the deposition path
+
 ![](https://github.com/tonyhzheng/robotic_deposition/blob/main/assets/matplotlib.gif)
 ## Usage
 
