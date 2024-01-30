@@ -22,7 +22,7 @@ Live plot of the deposition path
 ## Usage
 
 ### Setup
-This repository was tested on  laptop running 'Ubuntu 16.04.6 LTS'. The docker environment running the simulation and code is self-contained with the necessary packages/dependencies installed.  Make sure you follow the instructions of installing Docker and Docker Compose in https://docs.docker.com/compose/install/
+This repository was tested on  laptop running 'Ubuntu 16.04.6 LTS' with nvidia-410 and cuda-10. If you have different nvidia/cuda versions on your local machine, go to the [docker-compose.yml](https://github.com/tonyhzheng/robotic_deposition/blob/main/docker-compose.yml) file and modify the volumes to the corresponding versions (lines 15-17).  The docker environment running the simulation and code is self-contained with the necessary packages/dependencies installed. Make sure you follow the instructions of installing Docker and Docker Compose in https://docs.docker.com/compose/install/
 
 
 #### Step 1.
