@@ -11,32 +11,45 @@ The 3D printing of biphasic materials can be difficult due to the non-homogeneit
 ### Overview
 This repository will allow you to simulate a UR5e robot arm and command it to extrude a desired shape given by g-code.  
 
+UR5e Simulator from Universal Robotics
+![](https://github.com/tonyhzheng/robotic_deposition/blob/main/assets/ur5e_sim.gif)
 
+GUI for visualizing the data from the robot arm
+![](https://github.com/tonyhzheng/robotic_deposition/blob/main/assets/dearpygui.gif)
+
+Live plot of the deposition path
+![](https://github.com/tonyhzheng/robotic_deposition/blob/main/assets/matplotlib.gif)
 ## Usage
 
 ### Setup
-This repository was tested on laptop running 'Ubuntu 16.04.6 LTS'. The docker environment running the simulation and code is self-contained with the necessary packages/dependencies installed.  Make sure you follow the instructions of installing Docker and Docker Compose in https://docs.docker.com/compose/install/
+This repository was tested on  laptop running 'Ubuntu 16.04.6 LTS'. The docker environment running the simulation and code is self-contained with the necessary packages/dependencies installed.  Make sure you follow the instructions of installing Docker and Docker Compose in https://docs.docker.com/compose/install/
 
 
 #### Step 1.
-Open a terminal and change the current directory to where you downloaded this folder (~/your/file/path/to/aifs_robotic_deposition)
+Open a terminal and change the current directory to where you downloaded this folder 
+
+$ cd ~/your/file/path/to/aifs_robotic_deposition
 
 #### Step 2. 
 
 First time ever only - Build the image from the dockerfile using: 
-$ bash build_dockerfile.sh $
+
+$ bash build_dockerfile.sh 
 
 #### Step 3.
 Start the container
-$ bash start_docker_container.sh $
+
+$ bash start_docker_container.sh 
 
 #### Step 4.
 Join the container (you can repeat this command to join the container in different tabs)
-$ bash join_docker_container.sh $
+
+$ bash join_docker_container.sh 
 
 #### Step 5.
 Now you should be inside the docker container. Enter the following commands to build the ROS package.
-$ cd bind_mount/ && catkin_make3 $
+
+$ cd bind_mount/ && catkin_make3 
 
 #### Step 6.
 Exit the container with 'Ctrl+D' and rejoin it so the newly built package is sourced.
@@ -45,36 +58,47 @@ Exit the container with 'Ctrl+D' and rejoin it so the newly built package is sou
 To replicate the experiment of bioprinting a structure in the shape of a cube, complete the following steps:
 
 #### Step 1.
-Connect to http://localhost:6080/vnc.html?host=localhost&port=6080 in a web browser (tested on Mozilla Firefox)
-Press "Confirm Safety Configuration"
-Press the red button on the bottom left next to "Power off"
-Press "On" and "Start" 
-Press "Exit" on the bottom left
+Connect to http://localhost:6080/vnc.html?host=localhost&port=6080 in a web browser (tested on Mozilla Firefox).
+
+Press "Confirm Safety Configuration".
+
+Press the red button on the bottom left next to "Power off".
+
+Press "On" and "Start".
+
+Press "Exit" on the bottom left.
+
 Press "Move" on the top left. 
+
 You should now see the UR5e robot arm.
 
 #### Step 2.
 You can start running the example using the launch file:
 
-$roslaunch robotic_deposition gcode_bioprint.launch $
+$ roslaunch robotic_deposition gcode_bioprint.launch 
  
 
 ### Useful Docker Commands
 
-Show running docker containers
-$ docker ps $
+#### Show running docker containers
 
-Stop all containers (installation changes persist when you stop and start container)
-$ docker stop $(docker ps -a -q) $
+$ docker ps 
 
-Stop all containers by force (use if container not responding)
-$ docker kill $(docker ps -q) $
+#### Stop all containers (installation changes persist when you stop and start container)
 
-Remove all containers (installation changes DO NOT persist when you rm and restart container, note that changes to the workspace folder persist as it is a volume that is binded from the host computer to the container)
-$ docker rm $(docker ps -a -q) $
+$ docker stop $(docker ps -a -q) 
 
-Remove all images
-$ docker rmi -f $(docker images -a -q) $
+#### Stop all containers by force (use if container not responding)
+
+$ docker kill $(docker ps -q) 
+
+#### Remove all containers (installation changes DO NOT persist when you rm and restart container, note that changes to the workspace folder persist as it is a volume that is binded from the host computer to the container)
+
+$ docker rm $(docker ps -a -q) 
+
+#### Remove all images
+
+$ docker rmi -f $(docker images -a -q) 
 
 ## Authors
 
